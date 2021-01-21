@@ -1,0 +1,28 @@
+.rslides__wrap {
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+  height: 100vh;
+}
+.rslides {
+  width: calc(100% * 3);
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+.rslides ul, .rslides li {
+  margin: 0;
+  padding: 0;
+}
+.rslides li {
+  width: calc(100%/3);
+  list-style: none;
+  display: inline;
+  float: left;
+}
+.rslides li img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

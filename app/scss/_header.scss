@@ -1,7 +1,9 @@
 .header {
   height: 100px;
   width: 100%;
-  position: absolute;
+  position: fixed;
+  width: 100%;
+  background: #fff;
 }
 .header__inner {
   display: flex;
