@@ -1,0 +1,127 @@
+.header {
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  border: 1px solid black;
+}
+.header__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-top: 20px;
+}
+.logo {
+  width: 200px;
+  height: 52px;
+  background-image: url("../img/dest/logo-big.png");
+  @media (max-width: 950px) {
+    width: 52px;
+    height: 52px;
+    background-image: url("../img/dest/logo.png");
+    background-size: cover;
+  }
+}
+.search {
+  position: relative;
+  @media (max-width: 950px) {
+    display: none;
+  }
+}
+.search__input {
+  height: 40px;
+  width: 100%;
+  min-width: 300px;
+  border: 1px solid $subtext-color;
+  border-radius: 3px;
+  padding: 5px;
+  padding-left: 1em;
+}
+.search__btn {
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  padding: 5px;
+  border: 1px solid $secondary-color;
+  border-radius: 0 3px 3px 0;
+  background: $secondary-color;
+  font-family: $font-stack;
+  color: #fff;
+  font-weight: 700;
+}
+.search__btn:hover {
+  cursor: pointer;
+  text-shadow: #fff 0 0 20px;
+}
+.phone {
+  display: flex;
+  flex-direction: row;
+  @media (max-width: 500px) {
+    display: none;
+  }
+}
+.phone__icon {
+  color: $primary-color;
+  font-size: 2em;
+  margin-right: 5px;
+  display: flex;
+  align-items: flex-end;
+}
+.phone__title {
+  font-size: 1em;
+  color: $subtext-color;
+}
+.phone__number {
+  color: $secondary-color;
+  font-size: 1em;
+  font-weight: 700;
+}
+.callback__btn {
+  display: block;
+  text-decoration: none;
+  background: $primary-color;
+  color: #fff;
+  border-radius: 20px;
+  height: 40px;
+  line-height: 40px;
+  vertical-align: center;
+  padding: 0 15px;
+}
+.callback__btn:hover {
+  text-shadow: #fff 0 0 20px;
+}
+.cart {
+  display: flex;
+  flex-direction: row;
+}
+.cart__icon {
+  color: $secondary-color;
+  font-size: 2em;
+  margin-right: 5px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+.cart__count {
+  position: absolute;
+  background: $primary-color;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 14px;
+  bottom: 1.2em;
+  right: 0;
+  text-align: center;
+  font-weight: 700;
+  z-index: 10;
+}
+.cart__title {
+  font-size: 1em;
+  color: $subtext-color;
+}
+.cart__summ {
+  color: $secondary-color;
+  font-size: 1em;
+  font-weight: 700;
+}

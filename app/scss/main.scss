@@ -1,3 +1,27 @@
+$font-stack: 'Roboto', sans-serif;
+$primary-color: #69220c;
+$secondary-color: #212121;
+$text-color: #2F2F2F;
+$subtext-color: #9a9a9a;
+$accent-color: #61CE70;
+
 body {
-  background: aqua;
+  margin: 0;
+  font-family: $font-stack;
+  font-size: 15px;
+  line-height: 1.6;
+  color: $text-color;
 }
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+.container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+@import "header";
