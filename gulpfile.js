@@ -12,10 +12,10 @@ const del = require('del');
 let preprocessor = 'scss';
 
 function images() {
-    return src('app/images/src/**/*') // Берём все изображения из папки источника
-        .pipe(newer('app/images/dest/')) // Проверяем, было ли изменено (сжато) изображение ранее
+    return src('app/img/src/**/*') // Берём все изображения из папки источника
+        .pipe(newer('app/img/dest/')) // Проверяем, было ли изменено (сжато) изображение ранее
         .pipe(imagemin()) // Сжимаем и оптимизируем изображеня
-        .pipe(dest('app/images/dest/')) // Выгружаем оптимизированные изображения в папку назначения
+        .pipe(dest('app/img/dest/')) // Выгружаем оптимизированные изображения в папку назначения
 }
 function cleanimg() {
     return del('app/images/dest/**/*', { force: true }) // Удаляем всё содержимое папки "app/images/dest/"
@@ -54,7 +54,7 @@ function startwatch() {
     // Мониторим файлы HTML на изменения
     watch('app/**/*.html').on('change', browserSync.reload);
     // Мониторим папку-источник изображений и выполняем images(), если есть изменения
-    watch('app/images/src/**/*', images);
+    watch('app/img/src/**/*', images);
 }
 
 function buildcopy() {
@@ -82,4 +82,4 @@ exports.cleanimg = cleanimg;
 exports.build = series(styles, scripts, images, buildcopy);
 
 // Экспортируем дефолтный таск с нужным набором функций
-exports.default = parallel(scripts, styles, browsersync, startwatch);
+exports.default = parallel(scripts, styles, images, browsersync, startwatch);
