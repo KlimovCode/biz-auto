@@ -50,7 +50,7 @@ function startwatch() {
     // Выбираем все файлы JS в проекте, а затем исключим с суффиксом .min.js
     watch(['app/**/*.js', '!app/**/*.min.js'], scripts);
     // Мониторим файлы препроцессора на изменения
-    watch('app/**/' + preprocessor + '/**/*', styles);
+    watch(['app/**/' + preprocessor + '/**/*', '!app/**/*.min.css'], styles);
     // Мониторим файлы HTML на изменения
     watch('app/**/*.html').on('change', browserSync.reload);
     // Мониторим папку-источник изображений и выполняем images(), если есть изменения

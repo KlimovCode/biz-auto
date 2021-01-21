@@ -2,7 +2,6 @@
   height: 100px;
   width: 100%;
   position: absolute;
-  border: 1px solid black;
 }
 .header__inner {
   display: flex;
@@ -48,6 +47,7 @@
   font-family: $font-stack;
   color: #fff;
   font-weight: 700;
+  transition: all 200ms linear;
 }
 .search__btn:hover {
   cursor: pointer;
@@ -86,6 +86,7 @@
   line-height: 40px;
   vertical-align: center;
   padding: 0 15px;
+  transition: all 200ms linear;
 }
 .callback__btn:hover {
   text-shadow: #fff 0 0 20px;
