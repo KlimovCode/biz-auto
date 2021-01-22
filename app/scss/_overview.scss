@@ -4,6 +4,9 @@
 .overview__inner {
   display: flex;
   flex-direction: row;
+  @media (max-width: 950px) {
+    margin-top: 200px;
+  }
 }
 .overview__card {
   width: 30%;

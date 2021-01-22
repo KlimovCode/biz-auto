@@ -3,6 +3,10 @@
   width: 900px;
   overflow: hidden;
   margin-left: 50px;
+  @media (max-width: 950px) {
+    width: 100%;
+    margin-left: 0px;
+  }
 }
 .labels__inner {
   display: flex;
@@ -17,4 +21,8 @@
 .labels__item img {
   width: 150px;
   height: 150px;
+  @media (max-width: 950px) {
+    width: 100%;
+    height: auto;
+  }
 }
