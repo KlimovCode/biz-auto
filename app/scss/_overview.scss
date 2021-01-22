@@ -1,0 +1,63 @@
+.overview {
+  margin-top: 20px;
+}
+.overview__inner {
+  display: flex;
+  flex-direction: row;
+}
+.overview__card {
+  width: 30%;
+  height: 300px;
+  background: aqua;
+  padding: 20px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.overview__card--first {
+  background: url("../img/dest/overview1.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.overview__card--second {
+  background: url("../img/dest/overview2.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.overview__card--third {
+  background: url("../img/dest/overview3.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.overview__subtitle {
+  font-size: 0.65em;
+  color: #fff;
+  text-transform: uppercase;
+}
+.overview__title {
+  font-size: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.overview__price {
+  font-size: 1.65em;
+  color: $accent-color;
+}
+.overview__subprice {
+  font-size: 0.65em;
+  color: #fff;
+  font-weight: 400;
+}
+.overview__btn {
+  display: inline;
+
+}
+.overview__btn--link {
+  color: #fff;
+  background: $accent-color;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 1em;
+}

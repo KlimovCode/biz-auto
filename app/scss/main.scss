@@ -3,7 +3,7 @@ $primary-color: #5d321d;
 $secondary-color: #212121;
 $text-color: #2F2F2F;
 $subtext-color: #9a9a9a;
-$accent-color: #61CE70;
+$accent-color: #fdb819;
 
 body {
   margin: 0;
@@ -28,3 +28,4 @@ h1,h2,h3,h4,h5,h6 {
 @import "menu";
 @import "intro";
 @import "rslider";
+@import "overview";
