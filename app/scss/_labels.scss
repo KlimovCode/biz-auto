@@ -1,3 +1,20 @@
-.labels {
-  
+.labels__wrap {
+  height: 200px;
+  width: 900px;
+  overflow: hidden;
+  margin-left: 50px;
+}
+.labels__inner {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.labels__item {
+  //margin-right: 10px;
+}
+.labels__item img {
+  width: 150px;
+  height: 150px;
 }
