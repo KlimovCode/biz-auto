@@ -40,7 +40,6 @@ function scripts() {
     return src([ // Берём файлы из источников
         'node_modules/jquery/dist/jquery.min.js', // Пример подключения библиотеки
         'app/js/rslider.js', // slider
-        'app/js/labels.js', // labels
         'app/js/app.js', // Пользовательские скрипты, использующие библиотеку, должны быть подключены в конце
     ])
         .pipe(concat('app.min.js')) // Конкатенируем в один файл

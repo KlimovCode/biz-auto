@@ -1,0 +1,90 @@
+.footer {
+  background: $secondary-color;
+  padding: 50px 10px;
+}
+.footer__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer__phone {
+  margin-top: 10px;
+}
+.footer__phone__icon {
+  color: #fff;
+}
+.footer__phone__link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+}
+.footer__email {
+  margin-top: 10px;
+}
+.footer__email__link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+}
+.footer__email__icon {
+  color: #fff;
+}
+.footer__time {
+  margin-top: 10px;
+}
+.footer__time__icon {
+  color: #fff;
+}
+.footer__time span {
+  color: #fff;
+}
+.footer__list__title {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.footer__list {
+  margin: 0;
+  padding: 0;
+}
+.footer__list__item {
+  list-style: square;
+  color: $primary-color;
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+}
+.footer__list__item a {
+  text-decoration: none;
+  color: $subtext-color;
+  transition: all 200ms linear;
+}
+.footer__list__item a:hover {
+  text-decoration: none;
+  color: $primary-color;
+}
+.footer__search {
+  position: relative;
+}
+.footer__search__icon {
+  position: absolute;
+  font-size: 2em;
+  color: $subtext-color;
+  right: 0.3em;
+  top: 0.2em;
+}
+.footer__search__btn {
+  width: 2.5em;
+  height: 100%;
+  position: absolute;
+  right: 0.3em;
+  opacity: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+.footer__search__input {
+  height: 40px;
+  width: 100%;
+  padding: 5px;
+  padding-left: 1em;
+}
