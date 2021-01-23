@@ -88,3 +88,17 @@
   padding: 5px;
   padding-left: 1em;
 }
+.footer__copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.footer__copyright__host {
+  font-size: 1em;
+  color: $subtext-color;
+}
+.footer__copyright__develop a {
+  font-size: 1em;
+  color: $text-color;
+}
