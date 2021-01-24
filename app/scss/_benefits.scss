@@ -9,6 +9,7 @@
   border-bottom: 1px solid $subtext-color;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 .benefits__item {
   display: flex;
