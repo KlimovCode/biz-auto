@@ -92,3 +92,17 @@
 .menu__chehli__links a:hover {
   color: $subtext-color;
 }
+
+.menu__items__dropdown {
+  display: none;
+  background: $subtext-color;
+  border-top: 1px solid $primary-color;
+  overflow: scroll;
+  height: 100%;
+  @media (max-width: 750px) {
+    display: block;
+  }
+}
+.menu__items__dropdown a {
+  font-weight: 400;
+}

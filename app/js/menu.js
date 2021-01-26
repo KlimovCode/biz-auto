@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $(".menu__catalog a").on("click", function(e){
+    $(".menu__catalog__link").on("click", function(e){
         e.preventDefault()
         $(".menu__dropdown").toggle("slow");
     })
