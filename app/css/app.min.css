@@ -259,6 +259,40 @@ h1, h2, h3, h4, h5, h6 {
 .menu__item a:hover {
   background: #212121; }
 
+.menu__catalog {
+  position: relative; }
+
+.menu__dropdown {
+  background: #9a9a9a;
+  display: none;
+  position: absolute;
+  width: 100%;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); }
+
+.menu__dropdown ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px; }
+
+.menu__dropdown li {
+  list-style: none;
+  margin: 0px; }
+
+.menu__chehli {
+  position: relative; }
+
+.menu__chehli_wrap {
+  position: absolute;
+  right: -100%;
+  top: 0px; }
+
+.menu__chehli_inner {
+  margin-left: 20em; }
+
+.menu__chehli_wrap a {
+  font-weight: 400; }
+
 .intro {
   width: 100%;
   height: 100vh;
