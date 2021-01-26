@@ -283,6 +283,9 @@ h1, h2, h3, h4, h5, h6 {
   background: #fff;
   -webkit-box-shadow: 0px 8px 16px 0px black;
           box-shadow: 0px 8px 16px 0px black; }
+  @media (max-width: 330px) {
+    .menu__chehli__links {
+      display: none; } }
 
 .menu__chehli__links a {
   color: #212121;

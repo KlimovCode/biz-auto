@@ -81,6 +81,9 @@
   left: 200px;
   background: #fff;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+  @media (max-width: 330px) {
+    display: none;
+  }
 }
 .menu__chehli__links a {
   color: $secondary-color;
