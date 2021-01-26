@@ -10,6 +10,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  @media (max-width: 650px) {
+    flex-direction: column;
+  }
 }
 .benefits__item {
   display: flex;

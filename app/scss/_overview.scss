@@ -7,6 +7,9 @@
   @media (max-width: 950px) {
     margin-top: 200px;
   }
+  @media (max-width: 650px) {
+    flex-direction: column;
+  }
 }
 .overview__card {
   width: 30%;
@@ -17,6 +20,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @media (max-width: 650px) {
+    width: 80%;
+    margin: 10px auto;
+  }
 }
 .overview__card--first {
   background: url("../img/dest/overview1.jpg") no-repeat;
