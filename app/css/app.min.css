@@ -266,32 +266,32 @@ h1, h2, h3, h4, h5, h6 {
   background: #9a9a9a;
   display: none;
   position: absolute;
-  width: 100%;
+  width: 200px;
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); }
 
-.menu__dropdown ul {
-  list-style: none;
-  margin: 0px;
-  padding: 0px; }
+.menu__dropdown--active {
+  background: #212121; }
 
-.menu__dropdown li {
-  list-style: none;
-  margin: 0px; }
-
-.menu__chehli {
+.menu__chehli__wrap {
   position: relative; }
 
-.menu__chehli_wrap {
+.menu__chehli__links {
   position: absolute;
-  right: -100%;
-  top: 0px; }
+  top: 0;
+  left: 200px;
+  background: #fff;
+  -webkit-box-shadow: 0px 8px 16px 0px black;
+          box-shadow: 0px 8px 16px 0px black; }
 
-.menu__chehli_inner {
-  margin-left: 20em; }
+.menu__chehli__links a {
+  color: #212121;
+  -webkit-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  transition: all 200ms linear; }
 
-.menu__chehli_wrap a {
-  font-weight: 400; }
+.menu__chehli__links a:hover {
+  color: #9a9a9a; }
 
 .intro {
   width: 100%;

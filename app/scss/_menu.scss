@@ -65,30 +65,27 @@
   background: $subtext-color;
   display: none;
   position: absolute;
-  width: 100%;
+  width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
-.menu__dropdown ul {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-}
-.menu__dropdown li {
-  list-style: none;
-  margin: 0px;
+.menu__dropdown--active {
+  background: $secondary-color;
 }
 
-.menu__chehli {
+.menu__chehli__wrap {
   position: relative;
 }
-.menu__chehli_wrap {
+.menu__chehli__links {
   position: absolute;
-  right: -100%;
-  top: 0px;
+  top: 0;
+  left: 200px;
+  background: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
 }
-.menu__chehli_inner {
-  margin-left: 20em;
+.menu__chehli__links a {
+  color: $secondary-color;
+  transition: all 200ms linear;
 }
-.menu__chehli_wrap a {
-  font-weight: 400;
+.menu__chehli__links a:hover {
+  color: $subtext-color;
 }
