@@ -3,12 +3,19 @@
   flex-direction: row;
   justify-content: space-around;
   padding-top: 20px;
+  @media (max-width: 750px) {
+    flex-direction: column;
+  }
 }
 .contacts {
   padding: 20px;
   border: 1px solid $subtext-color;
   border-radius: 5px;
   margin-right: 50px;
+  @media (max-width: 750px) {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 .contacts__phone__link {
   text-decoration: none;
@@ -42,16 +49,26 @@
   border: 1px solid $subtext-color;
   border-radius: 5px;
   width: 100%;
+  @media (max-width: 750px) {
+    width: 80%;
+    margin: 20px auto;
+  }
 }
 .contactform__data {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 20px;
+  @media (max-width: 750px) {
+    flex-direction: column;
+  }
 }
 .contactform__data__name {
   width: 100%;
   margin-right: 10px;
+  @media (max-width: 750px) {
+    margin-right: 0;
+  }
 }
 .contactform__data__name input {
   width: 100%;
@@ -60,6 +77,10 @@
 .contactform__data__phone {
   width: 100%;
   margin-left: 10px;
+  @media (max-width: 750px) {
+    margin-left: 0;
+    margin-top: 10px;
+  }
 }
 .contactform__data__phone input {
   width: 100%;

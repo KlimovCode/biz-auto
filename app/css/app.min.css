@@ -626,12 +626,22 @@ h1, h2, h3, h4, h5, h6 {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding-top: 20px; }
+  @media (max-width: 750px) {
+    .main__inner--contact {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .contacts {
   padding: 20px;
   border: 1px solid #9a9a9a;
   border-radius: 5px;
   margin-right: 50px; }
+  @media (max-width: 750px) {
+    .contacts {
+      width: 90%;
+      margin: 0 auto; } }
 
 .contacts__phone__link {
   text-decoration: none;
@@ -665,6 +675,10 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid #9a9a9a;
   border-radius: 5px;
   width: 100%; }
+  @media (max-width: 750px) {
+    .contactform {
+      width: 80%;
+      margin: 20px auto; } }
 
 .contactform__data {
   display: -webkit-box;
@@ -678,10 +692,19 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 20px; }
+  @media (max-width: 750px) {
+    .contactform__data {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .contactform__data__name {
   width: 100%;
   margin-right: 10px; }
+  @media (max-width: 750px) {
+    .contactform__data__name {
+      margin-right: 0; } }
 
 .contactform__data__name input {
   width: 100%;
@@ -690,6 +713,10 @@ h1, h2, h3, h4, h5, h6 {
 .contactform__data__phone {
   width: 100%;
   margin-left: 10px; }
+  @media (max-width: 750px) {
+    .contactform__data__phone {
+      margin-left: 0;
+      margin-top: 10px; } }
 
 .contactform__data__phone input {
   width: 100%;
