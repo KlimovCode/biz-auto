@@ -3,7 +3,7 @@
         <div class="footer__inner">
             <div class="footer__col">
                 <div class="footer__logo">
-                    <img src="./img/dest/logo-big-transparent.png" alt="logo">
+                    <img src="/app/img/dest/logo-big-transparent.png" alt="logo">
                 </div>
                 <div class="footer__phone">
                     <ion-icon name="call-outline" class="footer__phone__icon"></ion-icon>
