@@ -3,9 +3,9 @@ $(document).ready(function() {
         e.preventDefault()
         $(".menu__dropdown").toggle("slow");
     })
-
-    $(".menu__chehli").on("click", function(e){
-        e.preventDefault()
-        $(".menu__dropdown").toggle("slow");
-    })
+    //
+    // $(".menu__chehli").on("click", function(e){
+    //     e.preventDefault()
+    //     $(".menu__dropdown").toggle("slow");
+    // })
 })

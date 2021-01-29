@@ -40,7 +40,7 @@
                     </a>
                     <div class="menu__dropdown">
                         <div class="menu__chehli__wrap">
-                            <a href="#" class="menu__chehli menu__dropdown--active">Авточехлы</a>
+                            <a href="auto.php" class="menu__chehli menu__dropdown--active">Авточехлы</a>
                             <div class="menu__chehli__links">
                                 <?php include "./db/getmenu.php"; ?>
                             </div>
