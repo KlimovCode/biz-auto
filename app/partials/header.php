@@ -42,9 +42,7 @@
                         <div class="menu__chehli__wrap">
                             <a href="#" class="menu__chehli menu__dropdown--active">Авточехлы</a>
                             <div class="menu__chehli__links">
-                                <a href="">BMW</a>
-                                <a href="">AUDI</a>
-                                <a href="">Chevrolet</a>
+                                <?php include "./db/getmenu.php"; ?>
                             </div>
                         </div>
                         <a href="#">Коврики</a>
