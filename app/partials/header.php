@@ -40,7 +40,7 @@
                     </a>
                     <div class="menu__dropdown">
                         <div class="menu__chehli__wrap">
-                            <a href="auto.php" class="menu__chehli menu__dropdown--active">Авточехлы</a>
+                            <a href="auto" class="menu__chehli menu__dropdown--active">Авточехлы</a>
                             <div class="menu__chehli__links">
                                 <?php include "./db/getmenu.php"; ?>
                             </div>
@@ -49,18 +49,18 @@
                         <a href="#">Накидки</a>
                         <a href="#">Аксесуары</a>
                         <div class="menu__items__dropdown">
-                            <a href="index.php">Главная</a>
-                            <a href="mounting.php">Установка</a>
-                            <a href="about.php">О нас</a>
-                            <a href="contacts.php">Контакты</a>
+                            <a href="index">Главная</a>
+                            <a href="mounting">Установка</a>
+                            <a href="about">О нас</a>
+                            <a href="contacts">Контакты</a>
                         </div>
                     </div>
                 </div>
                 <div class="menu__items">
-                    <div class="menu__item"><a href="index.php">Главная</a></div>
-                    <div class="menu__item"><a href="mounting.php">Установка</a></div>
-                    <div class="menu__item"><a href="about.php">О нас</a></div>
-                    <div class="menu__item"><a href="contacts.php">Контакты</a></div>
+                    <div class="menu__item"><a href="index">Главная</a></div>
+                    <div class="menu__item"><a href="mounting">Установка</a></div>
+                    <div class="menu__item"><a href="about">О нас</a></div>
+                    <div class="menu__item"><a href="contacts">Контакты</a></div>
                 </div>
             </div>
         </div>
