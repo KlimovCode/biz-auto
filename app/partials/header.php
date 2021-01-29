@@ -49,10 +49,10 @@
                         <a href="#">Накидки</a>
                         <a href="#">Аксесуары</a>
                         <div class="menu__items__dropdown">
-                            <a href="index.html">Главная</a>
-                            <a href="mounting.html">Установка</a>
-                            <a href="about.html">О нас</a>
-                            <a href="contacts.html">Контакты</a>
+                            <a href="index.php">Главная</a>
+                            <a href="mounting.php">Установка</a>
+                            <a href="about.php">О нас</a>
+                            <a href="contacts.php">Контакты</a>
                         </div>
                     </div>
                 </div>
