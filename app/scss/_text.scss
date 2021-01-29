@@ -2,3 +2,43 @@
   margin-top: 200px;
   margin-bottom: 50px;
 }
+.cards__wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.common-card {
+  border: 2px solid $primary-color;
+  border-radius: 2em;
+  box-shadow:1px 1px 5px 1px rgba(93,50,29,1);
+  margin: 1em;
+  //padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.common-card__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 2em;
+  text-decoration: none;
+  font-weight: 400;
+  color: $secondary-color;
+  transition: all 200ms linear;
+}
+.common-card__link:hover {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-weight: 700;
+  color: $primary-color;
+}
+.common-card__img {
+  padding: 1em;
+}
+.common-card__title {
+  font-size: 1.4em;
+  text-align: center;
+}
