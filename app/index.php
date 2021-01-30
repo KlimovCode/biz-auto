@@ -3,9 +3,7 @@
 include "./partials/top.php";
 include "./partials/header.php";
 if(preg_match("/app\/auto\/a(\d{1,2}|50)$/", $_GET['route'])) {
-    $brend = explode('/', $_GET['route']);
-    $brend = $brend[2];
-    
+    include "./content/models.php";
 } else {
     switch ($_GET['route']) {
         case 'app/auto':

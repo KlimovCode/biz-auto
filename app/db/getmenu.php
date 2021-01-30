@@ -11,7 +11,7 @@ $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($lin
 
 if($result) {
     while ($row = mysqli_fetch_row($result)) {
-        echo "<a href=\"auto/a$row[0]\">$row[1]</a>";
+        echo "<a href=\"a$row[0]\">$row[1]</a>";
     }
     // очищаем результат
     mysqli_free_result($result);
