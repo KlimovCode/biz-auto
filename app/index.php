@@ -4,6 +4,8 @@ include "./partials/top.php";
 include "./partials/header.php";
 if(preg_match("/app\/auto\/a(\d{1,2}|50)$/", $_GET['route'])) {
     include "./content/models.php";
+} elseif(preg_match("/app\/auto\/a\d{1,2}\/m\d{1,3}/", $_GET['route'])) {
+    include "./content/submodels.php";
 } else {
     switch ($_GET['route']) {
         case 'app/auto':
