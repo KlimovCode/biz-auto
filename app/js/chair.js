@@ -29,5 +29,17 @@ $(document).ready(function() {
             fabricName: fabric,
             price
         }
+        let cart = {}
+        if(localStorage.getItem('cart')) {
+            cart = JSON.parse(localStorage.getItem('cart'))
+            let time = Date.now()
+            cart.goods.push({time, ...data})
+            localStorage.setItem('cart', JSON.stringify(cart))
+        } else {
+            let time = Date.now()
+            cart = {goods: [{time, ...data}]}
+            localStorage.setItem('cart', JSON.stringify(cart))
+        }
+        console.log(JSON.parse(localStorage.getItem('cart')))
     })
 })
