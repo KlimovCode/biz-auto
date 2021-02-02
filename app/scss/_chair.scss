@@ -1,0 +1,17 @@
+.chair__wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.chair__bigimg {
+  max-width: 300px;
+}
+.chair__bigimg img {
+  max-width: 300px;
+}
+.chair__fabrics {
+  display: flex;
+  flex-direction: column;
+}

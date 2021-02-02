@@ -855,3 +855,31 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   padding: 1em;
   cursor: pointer; }
+
+.chair__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.chair__bigimg {
+  max-width: 300px; }
+
+.chair__bigimg img {
+  max-width: 300px; }
+
+.chair__fabrics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }

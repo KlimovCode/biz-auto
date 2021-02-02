@@ -1,35 +1,37 @@
 <?php
 
-include "./partials/top.php";
-include "./partials/header.php";
-if(preg_match("/app\/auto\/a(\d{1,2}|50)$/", $_GET['route'])) {
-    include "./content/models.php";
+require_once "./partials/top.php";
+require_once "./partials/header.php";
+if(preg_match("/app\/auto\/a\d{1,2}\/m\d{1,3}\/sm\d{1,2}/", $_GET['route'])) {
+    require_once "./content/chair.php";
 } elseif(preg_match("/app\/auto\/a\d{1,2}\/m\d{1,3}/", $_GET['route'])) {
-    include "./content/submodels.php";
+    require_once "./content/submodels.php";
+} elseif(preg_match("/app\/auto\/a(\d{1,2}|50)$/", $_GET['route'])) {
+    require_once "./content/models.php";
 } else {
     switch ($_GET['route']) {
         case 'app/auto':
-            include "./content/auto.php";
+            require_once "./content/auto.php";
             break;
         case 'app/mounting':
-            include "./content/mounting.php";
+            require_once "./content/mounting.php";
             break;
         case 'app/about':
-            include "./content/about.php";
+            require_once "./content/about.php";
             break;
         case 'app/contacts':
-            include "./content/contacts.php";
+            require_once "./content/contacts.php";
             break;
         default:
-            include "./partials/intro.php";
-            include "./partials/overview.php";
-            include "./partials/benefits.php";
-            include "./partials/labels.php";
+            require_once "./partials/intro.php";
+            require_once "./partials/overview.php";
+            require_once "./partials/benefits.php";
+            require_once "./partials/labels.php";
             break;
     }
 }
 
 
 
-include "./partials/footer.php";
-include "./partials/bottom.php";
+require_once "./partials/footer.php";
+require_once "./partials/bottom.php";
