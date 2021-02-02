@@ -1,17 +1,8 @@
 <?php
 
-$chairs = scandir("/app/img/chair");
-foreach ($chairs as $chair) {
-    if ($chair == '.' || $chair == '..') { continue; }
-    echo $chair;
-}
-
-echo <<< _END
-<div class="chair__bigimg chair__bigimg--1">
-        <img src="/app/img/chair/Алькантара/Черный/big.jpg" alt="">
-        <span>Черный</span>
-    </div>
-    <div class="chair__fabrics">
+$imgs = '';
+$fabrics = '';
+$fabrics_input = '<div class="chair__fabrics">
         <label for="alcantara">
             <input type="radio" id="alcantara" name="fabric" checked>
             Алькантара
@@ -37,15 +28,35 @@ echo <<< _END
             Экокожа+Велюр
             <span> 7500 руб.</span>
         </label>
-    </div>
-    <div class="chair__color chair__color--alcantara">
-        <div class="chair__color__item chair__color__item--1">
-            <img src="/app/img/chair/Алькантара/Черный/small.jpg" alt="">
-        </div>
-    </div>
-    <div class="chair__color chair__color--ecocloth">
-        <div class="chair__color__item">
-            <img src="/app/img/chair/Алькантара/Черный/small.jpg" alt="">
-        </div>
-    </div>
-_END;
+    </div>';
+$count = 1;
+
+$chairs = scandir($_SERVER['DOCUMENT_ROOT'] . "/app/img/chair");
+foreach ($chairs as $chair) {
+    if ($chair == '.' || $chair == '..') { continue; }
+    $models = scandir($_SERVER['DOCUMENT_ROOT'] . "/app/img/chair" . '/' . $chair);
+    foreach ($models as $model) {
+        if ($model == '.' || $model == '..') { continue; }
+        $imgs_path = $_SERVER['DOCUMENT_ROOT'] . "/app/img/chair" . '/' . $chair . '/' . $model;
+        $model_imgs = scandir($imgs_path);
+        foreach ($model_imgs as $model_img) {
+            if ($model_img == '.' || $model_img == '..') { continue; }
+            $imgs .= "<div class=\"chair__bigimg chair__bigimg--$count\">
+                <img src=\"/app/img/chair/$chair/$model/big.jpg\">
+                <span>$model</span>
+                </div>";
+
+            $count++;
+        }
+    }
+}
+//echo $imgs;
+//echo $fabrics_input;
+//echo '<div class="chair__color chair__color--alcantara">';
+//echo $fabrics;
+//echo '</div>';
+
+
+// $fabrics .= "<div class=\"chair__color__item chair__color__item--$count\">
+//                            <img src=\"/app/img/chair/$chair/$model/small.jpg\" alt=\"\">
+//                        </div>";

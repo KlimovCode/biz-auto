@@ -3,7 +3,10 @@
         <h2 class="main__title"><?php require_once "./db/getchairname.php"?></h2>
         <div class="main__inner">
             <div class="chair__wrap">
-                <?php require_once "./db/getchaircolor.php"?>
+                <?php
+                    require_once "./chairbigimg.php";
+                    require_once "./db/getchaircolor.php";
+                ?>
             </div>
         </div>
     </div>
