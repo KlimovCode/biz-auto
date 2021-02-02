@@ -19,3 +19,11 @@
 .chair__fabrics label {
   cursor: pointer;
 }
+.chair__color {
+  display: flex;
+  width: 300px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: start;
+}
