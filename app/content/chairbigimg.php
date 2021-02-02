@@ -211,4 +211,4 @@
 </div><div class="chair__bigimg chair__bigimg--71">
     <img src="/app/img/chair/Экокожа Ромб/Шоколад + шоколад/big.jpg">
     <span>Шоколад + шоколад</span>
-</div> 
+</div>
