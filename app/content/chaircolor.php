@@ -109,3 +109,53 @@
         <img src="/app/img/chair/Экокожа/Шоколад + шоколад/small.jpg" alt="">
     </div>
 </div>
+
+<div class="chair__color chair__color--ecoclothromb">
+    <div class="chair__color__item chair__color__item--49">
+        <img src="/app/img/chair/Экокожа Ромб/Бежевый + бежевый/small.jpg" alt="">
+    </div><div class="chair__color__item chair__color__item--50">
+        <img src="/app/img/chair/Экокожа Ромб/Белый + белый/small.jpg" alt="">
+    </div><div class="chair__color__item chair__color__item--51">
+        <img src="/app/img/chair/Экокожа Ромб/Белый + черный/small.jpg" alt="">
+    </div><div class="chair__color__item chair__color__item--52">
+        <img src="/app/img/chair/Экокожа Ромб/Коричневый + коричневый/small.jpg" alt="">
+    </div><div class="chair__color__item chair__color__item--53">
+        <img src="/app/img/chair/Экокожа Ромб/Оранжевый + черный/small.jpg" alt="">
+    </div><div class="chair__color__item chair__color__item--54">
+        <img src="/app/img/chair/Экокожа Ромб/Серый + серый/small.jpg" alt="">
+    </div><div class="chair__color__item chair__color__item--55">
+        <img src="/app/img/chair/Экокожа Ромб/Серый + черный/small.jpg" alt="">
+    </div><div class="chair__color__item chair__color__item--56">
+        <img src="/app/img/chair/Экокожа Ромб/Темно-бежевый + темно-бежевый/small.jpg" alt="">
+    </div><div class="chair__color__item chair__color__item--57">
+        <img src="/app/img/chair/Экокожа Ромб/Темно-коричневый + темно-коричневый/small.jpg" alt="">
+    </div><div class="chair__color__item chair__color__item--58">
+        <img src="/app/img/chair/Экокожа Ромб/Темно-серый + темно-серый/small.jpg" alt="">
+    </div><div class="chair__color__item chair__color__item--59">
+        <img src="/app/img/chair/Экокожа Ромб/Черный + Коричневый/small.jpg" alt="">
+    </div><div class="chair__color__item chair__color__item--60">
+        <img src="/app/img/chair/Экокожа Ромб/Черный + бежевый/small.jpg" alt="">
+    </div><div class="chair__color__item chair__color__item--61">
+        <img src="/app/img/chair/Экокожа Ромб/Черный + белый/small.jpg" alt="">
+    </div><div class="chair__color__item chair__color__item--62">
+        <img src="/app/img/chair/Экокожа Ромб/Черный + красный/small.jpg" alt="">
+    </div><div class="chair__color__item chair__color__item--63">
+        <img src="/app/img/chair/Экокожа Ромб/Черный + оранжевый/small.jpg" alt="">
+    </div><div class="chair__color__item chair__color__item--64">
+        <img src="/app/img/chair/Экокожа Ромб/Черный + серый/small.jpg" alt="">
+    </div><div class="chair__color__item chair__color__item--65">
+        <img src="/app/img/chair/Экокожа Ромб/Черный + синий/small.jpg" alt="">
+    </div><div class="chair__color__item chair__color__item--66">
+        <img src="/app/img/chair/Экокожа Ромб/Черный + темно-бежевый/small.jpg" alt="">
+    </div><div class="chair__color__item chair__color__item--67">
+        <img src="/app/img/chair/Экокожа Ромб/Черный + темно-коричневый/small.jpg" alt="">
+    </div><div class="chair__color__item chair__color__item--68">
+        <img src="/app/img/chair/Экокожа Ромб/Черный + темно-серый/small.jpg" alt="">
+    </div><div class="chair__color__item chair__color__item--69">
+        <img src="/app/img/chair/Экокожа Ромб/Черный + черный/small.jpg" alt="">
+    </div><div class="chair__color__item chair__color__item--70">
+        <img src="/app/img/chair/Экокожа Ромб/Черный + шоколад/small.jpg" alt="">
+    </div><div class="chair__color__item chair__color__item--71">
+        <img src="/app/img/chair/Экокожа Ромб/Шоколад + шоколад/small.jpg" alt="">
+    </div>
+</div>

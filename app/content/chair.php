@@ -6,8 +6,7 @@
                 <?php
                     require_once "chairbigimg.php";
                     require_once "chairfabrics.php";
-//                    require_once "chaircolor.php";
-                    require_once "./db/getchaircolor.php";
+                    require_once "chaircolor.php";
                 ?>
             </div>
         </div>
