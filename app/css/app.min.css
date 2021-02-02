@@ -883,3 +883,6 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+
+.chair__fabrics label {
+  cursor: pointer; }

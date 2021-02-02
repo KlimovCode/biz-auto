@@ -34,7 +34,12 @@
                         <span> 7500 руб.</span>
                     </label>
                 </div>
-                <div class="chair__color">
+                <div class="chair__color chair__color--alcantara">
+                    <div class="chair__color__item">
+                        <img src="/app/img/chair/Алькантара/Черный/small.jpg" alt="">
+                    </div>
+                </div>
+                <div class="chair__color chair__color--ecocloth">
                     <div class="chair__color__item">
                         <img src="/app/img/chair/Алькантара/Черный/small.jpg" alt="">
                     </div>
