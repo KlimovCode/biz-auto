@@ -2,6 +2,7 @@
 
 require_once "./partials/top.php";
 require_once "./partials/header.php";
+require_once "./partials/popup.php";
 if(preg_match("/app\/auto\/a\d{1,2}\/m\d{1,3}\/sm\d{1,2}/", $_GET['route'])) {
     require_once "./content/chair.php";
 } elseif(preg_match("/app\/auto\/a\d{1,2}\/m\d{1,3}/", $_GET['route'])) {
