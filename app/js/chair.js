@@ -1,3 +1,14 @@
+function renderCart() {
+    if(localStorage.getItem('cart')) {
+        cart = JSON.parse(localStorage.getItem('cart'))
+        let goodsLength = cart.goods.length
+        $(".cart__count").text(goodsLength)
+    } else {
+        $(".cart__count").text(0)
+    }
+}
+renderCart()
+
 $(document).ready(function() {
     let img = 1
     let fabric = 'alcantara'
@@ -41,5 +52,7 @@ $(document).ready(function() {
             localStorage.setItem('cart', JSON.stringify(cart))
         }
         console.log(JSON.parse(localStorage.getItem('cart')))
+
+        renderCart()
     })
 })

@@ -95,8 +95,12 @@
   text-shadow: #fff 0 0 20px;
 }
 .cart {
+  
+}
+.cart__link {
   display: flex;
   flex-direction: row;
+  text-decoration: none;
 }
 .cart__icon {
   color: $secondary-color;

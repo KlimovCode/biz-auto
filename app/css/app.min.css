@@ -134,14 +134,15 @@ h1, h2, h3, h4, h5, h6 {
 .callback__btn:hover {
   text-shadow: #fff 0 0 20px; }
 
-.cart {
+.cart__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
-          flex-direction: row; }
+          flex-direction: row;
+  text-decoration: none; }
 
 .cart__icon {
   color: #212121;
@@ -939,3 +940,13 @@ h1, h2, h3, h4, h5, h6 {
 .chair__btn__buy:hover {
   text-shadow: #fff 0 0 20px;
   cursor: pointer; }
+
+.cart__table {
+  max-width: 90%;
+  margin: 0 auto; }
+
+.cart__table tr {
+  border: 1px solid #ddd; }
+
+.cart__table td {
+  padding: 1em; }

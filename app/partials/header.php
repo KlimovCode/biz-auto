@@ -19,14 +19,16 @@
                 <a href="#" class="callback__btn">Обратный звонок</a>
             </div>
             <div class="cart">
-                <div class="cart__icon">
-                    <span class="cart__count">0</span>
-                    <ion-icon name="cart-outline"></ion-icon>
-                </div>
-                <div class="cart__text">
-                    <div class="cart__title">Корзина</div>
-                    <div class="cart__summ">0 руб.</div>
-                </div>
+                <a href="/app/cart" class="cart__link">
+                    <div class="cart__icon">
+                        <span class="cart__count">0</span>
+                        <ion-icon name="cart-outline"></ion-icon>
+                    </div>
+                    <div class="cart__text">
+                        <div class="cart__title">Корзина</div>
+                        <div class="cart__summ">0 руб.</div>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
