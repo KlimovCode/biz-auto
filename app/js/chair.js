@@ -33,11 +33,15 @@ $(document).ready(function() {
 
     $(".chair__btn__buy").on('click', function (e) {
         let title = $(".main__title").text();
-        let price = $(".chair__fabrics label[for="+fabric+"] span").text()
+        let price = $(".chair__fabrics label[for="+fabric+"] .fabric__price").text()
+        let fabricRus = $(".chair__fabrics label[for="+fabric+"] .fabric__name").text()
+        let fabricColor = $(".chair__bigimg--"+img+" span").text()
         let data = {
             imgNumber: img,
             titleAuto: title,
             fabricName: fabric,
+            fabricRus,
+            fabricColor,
             price
         }
         let cart = {}

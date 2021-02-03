@@ -943,10 +943,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .cart__table {
   max-width: 90%;
-  margin: 0 auto; }
+  margin: 2em auto; }
 
 .cart__table tr {
   border: 1px solid #ddd; }
 
+.cart__table tr:nth-child(n) {
+  background: #ddd; }
+
 .cart__table td {
   padding: 1em; }
+
+.cart__table__inside td {
+  padding: 5px; }
+
+.cart__table__inside__name {
+  font-weight: 700; }
