@@ -47,9 +47,9 @@
                                 <?php include "./db/getmenu.php"; ?>
                             </div>
                         </div>
-                        <a href="#">Коврики</a>
-                        <a href="#">Накидки</a>
-                        <a href="#">Аксесуары</a>
+<!--                        <a href="#">Коврики</a>-->
+<!--                        <a href="#">Накидки</a>-->
+<!--                        <a href="#">Аксесуары</a>-->
                         <div class="menu__items__dropdown">
                             <a href="/app/index">Главная</a>
                             <a href="/app/mounting">Установка</a>
