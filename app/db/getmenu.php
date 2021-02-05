@@ -4,7 +4,7 @@ require_once 'connection.php'; // get variables
 
 $link = mysqli_connect($host, $username, $password, $dbname)
 or die("Ошибка " . mysqli_error($link));
-
+$link->set_charset("utf8");
 $query ="SELECT * FROM brends";
 
 $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link));

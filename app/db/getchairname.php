@@ -4,7 +4,7 @@ require_once 'connection.php'; // get variables
 
 $link = mysqli_connect($host, $username, $password, $dbname)
 or die("Ошибка " . mysqli_error($link));
-
+$link->set_charset("utf8");
 // get id of brend
 $model = explode('/', $_GET['route']);
 $model_id = (int)substr($model[4], 2);
