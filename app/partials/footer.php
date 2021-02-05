@@ -9,6 +9,10 @@
                     <ion-icon name="call-outline" class="footer__phone__icon"></ion-icon>
                     <a href="tel:89166896787" class="footer__phone__link">8 (916) 689-67-87</a>
                 </div>
+                <div class="footer__whatsapp">
+                    <ion-icon name="logo-whatsapp" class="footer__whatsapp__icon"></ion-icon>
+                    <a href="https://api.whatsapp.com/send?phone=89166896787" class="footer__whatsapp__link">WhatsApp</a>
+                </div>
                 <div class="footer__email">
                     <ion-icon name="mail-outline" class="footer__email__icon"></ion-icon>
                     <a href="mailto:profavto.moscow@yandex.ru" class="footer__email__link">profavto.moscow@yandex.ru</a>

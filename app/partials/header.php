@@ -44,7 +44,7 @@
                         <div class="menu__chehli__wrap">
                             <a href="/app/auto" class="menu__chehli menu__dropdown--active">Авточехлы</a>
                             <div class="menu__chehli__links">
-                                <?php include "./db/getmenu.php"; ?>
+                                <?php include "./app/db/getmenu.php"; ?>
                             </div>
                         </div>
 <!--                        <a href="#">Коврики</a>-->

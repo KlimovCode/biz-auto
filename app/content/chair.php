@@ -1,6 +1,6 @@
 <main class="main">
     <div class="container">
-        <h2 class="main__title"><?php require_once "./db/getchairname.php"?></h2>
+        <h2 class="main__title"><?php require_once "./app/db/getchairname.php"?></h2>
         <div class="main__inner">
             <div class="chair__wrap">
                 <div class="chair__inner">
