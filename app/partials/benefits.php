@@ -12,6 +12,15 @@
             </div>
             <div class="benefits__item">
                 <div class="benefits__icon">
+                    <i aria-hidden="true" class="fas fa-hand-holding-heart"></i>
+                </div>
+                <div class="benefits__text">
+                    <div class="benefits__title">Установка и прошивка</div>
+                    <div class="benefits__description">По желанию</div>
+                </div>
+            </div>
+            <div class="benefits__item">
+                <div class="benefits__icon">
                     <i aria-hidden="true" class="fas fa-money-bill-wave"></i>
                 </div>
                 <div class="benefits__text">
