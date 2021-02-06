@@ -3,6 +3,9 @@
   overflow: hidden;
   z-index: -1;
   height: 100vh;
+  @media (max-width: 651px) {
+    height: 50vh;
+  }
 }
 .rslides {
   width: calc(100% * 3);
