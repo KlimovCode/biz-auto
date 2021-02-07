@@ -5,14 +5,7 @@
             <div class="cart__wrap">
                 <table class="cart__table">
                     <tr>
-                        <th>№</th>
-                        <th>Модель</th>
-                        <th>Цена</th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Чехлы на Audi A1 Sportback 2010-2018</td>
-                        <td>7000 руб.</td>
+                        <th>Корзина пока пуста</th>
                     </tr>
                 </table>
                 <div class="chair__btn">

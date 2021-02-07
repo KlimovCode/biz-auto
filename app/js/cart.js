@@ -20,6 +20,20 @@ $(document).ready(function() {
                                         цвет: ${goods[i].fabricColor}
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td>
+                                        <label for="setchechol" class="cart__table__inside__input">
+                                            установка
+                                            <input type="checkbox" name=${goods[i].time} id="setchechol">
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <label for="sewchechol" class="cart__table__inside__input">
+                                            установка
+                                            <input type="checkbox" name=${goods[i].time} id="sewchechol">
+                                        </label>
+                                    </td>
+                                </tr>
                             </table>
                         </td>
                         <td>${goods[i].price}</td>
