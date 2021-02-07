@@ -25,7 +25,9 @@ $(document).ready(function() {
                                     <td>
                                         <label for="setchechol-${goods[i].time}" class="cart__table__inside__input">
                                             установка
-                                            <input type="checkbox" name="setchechol" id="setchechol-${goods[i].time}">
+                                            <input type="checkbox" 
+                                                name="setchechol" 
+                                                id="setchechol-${goods[i].time}">
                                         </label>
                                     </td>
                                     <td>
@@ -46,4 +48,16 @@ $(document).ready(function() {
         $(".cart__table").html(result)
     }
     showCart()
+
+    function checkCheckedInput() {
+
+    }
+
+    $(".cart__table__inside__input").click(function (e) {
+        let inputName = e.target.id.split("-")[0]
+        let inputId = e.target.id.split("-")[1]
+        if( inputName && inputId) {
+            console.log(inputName, inputId)
+        }
+    })
 })

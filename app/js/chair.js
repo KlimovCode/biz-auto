@@ -40,6 +40,8 @@ $(document).ready(function() {
             imgNumber: img,
             titleAuto: title,
             fabricName: fabric,
+            setChechol: false,
+            sewChechol: false,
             fabricRus,
             fabricColor,
             price
