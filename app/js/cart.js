@@ -1,11 +1,12 @@
 $(document).ready(function() {
-    let result = ""
-    if(localStorage.getItem('cart')) {
-        let cart = JSON.parse(localStorage.getItem('cart'))
-        let goods = cart.goods
-        result = "<tr><th>№</th><th>Модель</th><th>Цена</th></tr>"
-        for (let i = 0; i < goods.length; i++) {
-            result += `<tr>
+    function showCart() {
+        let result = ""
+        if(localStorage.getItem('cart')) {
+            let cart = JSON.parse(localStorage.getItem('cart'))
+            let goods = cart.goods
+            result = "<tr><th>№</th><th>Модель</th><th>Цена</th></tr>"
+            for (let i = 0; i < goods.length; i++) {
+                result += `<tr>
                         <td>${i+1}</td>
                         <td>
                             <table class="cart__table__inside">
@@ -22,15 +23,15 @@ $(document).ready(function() {
                                 </tr>
                                 <tr>
                                     <td>
-                                        <label for="setchechol" class="cart__table__inside__input">
+                                        <label for="setchechol-${goods[i].time}" class="cart__table__inside__input">
                                             установка
-                                            <input type="checkbox" name=${goods[i].time} id="setchechol">
+                                            <input type="checkbox" name="setchechol" id="setchechol-${goods[i].time}">
                                         </label>
                                     </td>
                                     <td>
-                                        <label for="sewchechol" class="cart__table__inside__input">
-                                            установка
-                                            <input type="checkbox" name=${goods[i].time} id="sewchechol">
+                                        <label for="sewchechol-${goods[i].time}" class="cart__table__inside__input">
+                                            подшивка
+                                            <input type="checkbox" name="sewchechol" id="sewchechol-${goods[i].time}">
                                         </label>
                                     </td>
                                 </tr>
@@ -38,9 +39,11 @@ $(document).ready(function() {
                         </td>
                         <td>${goods[i].price}</td>
                     </tr>`
+            }
+        } else {
+            result = "Корзина пока пуста"
         }
-    } else {
-        result = "Корзина пока пуста"
+        $(".cart__table").html(result)
     }
-    $(".cart__table").html(result)
+    showCart()
 })
