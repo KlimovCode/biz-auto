@@ -53,8 +53,8 @@ $(document).ready(function() {
         let cart = JSON.parse(localStorage.getItem('cart'))
         let goods = cart.goods
         for (const good of goods) {
-            $("#sewchechol-"+good.time).attr({checked: good.sewChechol})
-            $("#setchechol-"+good.time).attr({checked: good.setChechol})
+            $("#sewchechol-"+good.time).attr({checked: good.sewchechol})
+            $("#setchechol-"+good.time).attr({checked: good.setchechol})
         }
     }
     checkCheckedInput()
@@ -63,7 +63,20 @@ $(document).ready(function() {
         let inputName = e.target.id.split("-")[0]
         let inputId = e.target.id.split("-")[1]
         if(inputName && inputId) {
-            console.log(inputName, inputId)
+            let cart = JSON.parse(localStorage.getItem('cart'))
+            let goods = cart.goods
+            let newGoods = []
+            for (const good of goods) {
+                if(good.time == inputId) {
+                    good[inputName] = !good[inputName]
+                    newGoods.push(good)
+                    console.log(good[inputName])
+                } else {
+                    newGoods.push(good)
+                }
+            }
+            cart.goods = newGoods
+            localStorage.setItem('cart', JSON.stringify(cart))
         }
     })
 })
