@@ -44,7 +44,8 @@ $(document).ready(function() {
             sewchechol: false,
             fabricRus,
             fabricColor,
-            price
+            price,
+            actualPrice: price
         }
         let cart = {}
         if(localStorage.getItem('cart')) {
