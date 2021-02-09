@@ -3,6 +3,7 @@
 require_once "./app/partials/top.php";
 require_once "./app/partials/header.php";
 require_once "./app/partials/popup.php";
+require_once "./app/partials/popuporder.php";
 if(preg_match("/app\/auto\/a\d{1,2}\/m\d{1,3}\/sm\d{1,2}/", $_GET['route'])) {
     require_once "./app/content/chair.php";
 } elseif(preg_match("/app\/auto\/a\d{1,2}\/m\d{1,3}/", $_GET['route'])) {

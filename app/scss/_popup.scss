@@ -1,4 +1,4 @@
-.popup__callback {
+.popup__callback, .popup__order {
   display: none;
   z-index: 9;
   width:100%;
@@ -26,11 +26,19 @@
   padding-left: 35px;
   font-size: 1.5em;
 }
-.popup__callback__btn {
+.popup__callback__name {
+  width: 300px;
+  margin-top: 1em;
+  border-radius: 5px;
+  padding: 15px;
+  padding-left: 35px;
+  font-size: 1.5em;
+}
+.popup__callback__btn, .popup__order__btn {
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.popup__callback__buy {
+.popup__callback__buy, .popup__order__buy {
   width: 300px;
   border-radius: 5px;
   font-size: 1.4em;

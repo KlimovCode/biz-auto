@@ -8,8 +8,8 @@
                         <th>Корзина пока пуста</th>
                     </tr>
                 </table>
-                <div class="chair__btn">
-                    <button class="chair__btn__buy">
+                <div class="cart__btn">
+                    <button class="cart__btn__buy">
                         Оформить заказ
                     </button>
                 </div>
