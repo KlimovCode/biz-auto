@@ -4,29 +4,33 @@
   height: 150px;
   margin: 0 auto;
   overflow: hidden;
-  border: 1px solid red;
+  z-index: 1;
 }
 .labels__arrow__left {
   position: absolute;
   left: 0;
   bottom: 1em;
+  z-index: 11;
 }
 .labels__arrow__left button {
   color: #fff;
   background: #5d321d;
   font-weight: 700;
   border-radius: 5px;
+  z-index: 11;
 }
 .labels__arrow__right {
   position: absolute;
   right: 0;
   bottom: 1em;
+  z-index: 11;
 }
 .labels__arrow__right button {
   color: #fff;
   background: #5d321d;
   font-weight: 700;
   border-radius: 5px;
+  z-index: 11;
 }
 .labels__inner {
   display: block;
@@ -43,4 +47,5 @@
 }
 .labels__item__link img {
   width: 100%;
+  z-index: 1;
 }
