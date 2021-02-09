@@ -1,7 +1,7 @@
 $(document).ready(function() {
     function showCart() {
         let result = ""
-        if(localStorage.getItem('cart')) {
+        if(JSON.parse(localStorage.getItem('cart')).goods.length) {
             let cart = JSON.parse(localStorage.getItem('cart'))
             let goods = cart.goods
             result = "<tr><th>№</th><th>Модель</th><th>Цена</th></tr>"
@@ -11,7 +11,10 @@ $(document).ready(function() {
                         <td>
                             <table class="cart__table__inside">
                                 <tr>
-                                    <td colspan="2" class="cart__table__inside__name">${goods[i].titleAuto}</td>
+                                    <td colspan="2" class="cart__table__inside__name">
+                                        ${goods[i].titleAuto}
+                                        <button class="delbtn" id="del-${goods[i].time}">Убрать</button>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>
@@ -110,5 +113,18 @@ $(document).ready(function() {
             $("#price-"+good.time).text(good.actualPrice)
         }
     }
+
+    $(".delbtn").click(function (e) {
+        let deleteItemId = e.target.id.split("-")[1]
+        let cart = JSON.parse(localStorage.getItem('cart'))
+        let goods = cart.goods
+        let newGoods = []
+        for (const good of goods) {
+            if(good.time != deleteItemId) newGoods.push(good)
+        }
+        cart.goods = newGoods
+        localStorage.setItem('cart', JSON.stringify(cart))
+        showCart()
+    })
 
 })
