@@ -499,11 +499,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .labels__inner {
   display: block;
-  width: calc(100% * 2);
+  width: calc(100% * 26 / 6);
   margin: 0 auto; }
 
 .label__item {
-  width: calc(100% / 12);
+  width: calc(100% / 26);
   display: inline;
   float: left; }
 

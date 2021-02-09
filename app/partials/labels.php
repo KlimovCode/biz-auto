@@ -46,108 +46,93 @@
                     </a>
                 </div>
                 <div class="label__item">
-                    <a href="/app/auto/a10">
+                    <a href="/app/auto/a10" class="labels__item__link">
                         <img src="/app/img/dest/labels/citroen.png" alt="">
                     </a>
                 </div>
                 <div class="label__item">
-                    <a href="/app/auto/a11">
+                    <a href="/app/auto/a11" class="labels__item__link">
                         <img src="/app/img/dest/labels/daewoo.jpg" alt="">
                     </a>
                 </div>
                 <div class="label__item">
-                    <a href="/app/auto/a12">
+                    <a href="/app/auto/a12" class="labels__item__link">
                         <img src="/app/img/dest/labels/datsun.png" alt="">
                     </a>
                 </div>
-                <div class="labels__arrow__right">
-                    <button>&gt;</button>
+                <div class="label__item">
+                    <a href="/app/auto/a13" class="labels__item__link">
+                        <img src="/app/img/dest/labels/dodge.jpg" alt="">
+                    </a>
                 </div>
-<!---->
-<!--                    </li>-->
-<!--                    <li class="labels__item">-->
-<!--                        -->
-<!--                    </li>-->
-<!--                    <li class="labels__item">-->
-<!--                        -->
-<!--                    </li>-->
-<!--                    <li class="labels__item">-->
-<!--                        -->
-<!--                    </li>-->
-<!--                    <li class="labels__item">-->
-<!--                        -->
-<!--                    </li>-->
-<!--                    <li class="labels__item">-->
-<!--                        <a href="/app/auto/a13">-->
-<!--                            <img src="/app/img/dest/labels/dodge.jpg" alt="">-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                    <li class="labels__item">-->
-<!--                        <a href="/app/auto/a14">-->
-<!--                            <img src="/app/img/dest/labels/faw.png" alt="">-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                    <li class="labels__item">-->
-<!--                        <a href="/app/auto/a15">-->
-<!--                            <img src="/app/img/dest/labels/fiat.png" alt="">-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                    <li class="labels__item">-->
-<!--                        <a href="/app/auto/a16">-->
-<!--                            <img src="/app/img/dest/labels/ford.png" alt="">-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                    <li class="labels__item">-->
-<!--                        <a href="/app/auto/a17">-->
-<!--                            <img src="/app/img/dest/labels/geely.png" alt="">-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                    <li class="labels__item">-->
-<!--                        <a href="/app/auto/a18">-->
-<!--                            <img src="/app/img/dest/labels/greatwall.jpg" alt="">-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                    <li class="labels__item">-->
-<!--                        <a href="/app/auto/a19">-->
-<!--                            <img src="/app/img/dest/labels/haval.jpg" alt="">-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                    <li class="labels__item">-->
-<!--                        <a href="/app/auto/a20">-->
-<!--                            <img src="/app/img/dest/labels/honda.png" alt="">-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                    <li class="labels__item">-->
-<!--                        <a href="/app/auto/a21">-->
-<!--                            <img src="/app/img/dest/labels/hyndai.png" alt="">-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                    <li class="labels__item">-->
-<!--                        <a href="/app/auto/a22">-->
-<!--                            <img src="/app/img/dest/labels/kia.jpg" alt="">-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                    <li class="labels__item">-->
-<!--                        <a href="/app/auto/a23">-->
-<!--                            <img src="/app/img/dest/labels/landrover.jpg" alt="">-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                    <li class="labels__item">-->
-<!--                        <a href="/app/auto/a24">-->
-<!--                            <img src="/app/img/dest/labels/lexus.jpg" alt="">-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                    <li class="labels__item">-->
-<!--                        <a href="/app/auto/a25">-->
-<!--                            <img src="/app/img/dest/labels/lifan.png" alt="">-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                    <li class="labels__item">-->
-<!--                        <a href="/app/auto/a26">-->
-<!--                            <img src="/app/img/dest/labels/mini.jpg" alt="">-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                </ul>-->
+                <div class="label__item">
+                    <a href="/app/auto/a14" class="labels__item__link">
+                        <img src="/app/img/dest/labels/faw.png" alt="">
+                    </a>
+                </div>
+                <div class="label__item">
+                    <a href="/app/auto/a15" class="labels__item__link">
+                        <img src="/app/img/dest/labels/fiat.png" alt="">
+                    </a>
+                </div>
+                <div class="label__item">
+                    <a href="/app/auto/a16" class="labels__item__link">
+                        <img src="/app/img/dest/labels/ford.png" alt="">
+                    </a>
+                </div>
+                <div class="label__item">
+                    <a href="/app/auto/a17" class="labels__item__link">
+                        <img src="/app/img/dest/labels/geely.png" alt="">
+                    </a>
+                </div>
+                <div class="label__item">
+                    <a href="/app/auto/a18" class="labels__item__link">
+                        <img src="/app/img/dest/labels/greatwall.jpg" alt="">
+                    </a>
+                </div>
+                <div class="label__item">
+                    <a href="/app/auto/a19" class="labels__item__link">
+                        <img src="/app/img/dest/labels/haval.jpg" alt="">
+                    </a>
+                </div>
+                <div class="label__item">
+                    <a href="/app/auto/a20" class="labels__item__link">
+                        <img src="/app/img/dest/labels/honda.png" alt="">
+                    </a>
+                </div>
+                <div class="label__item">
+                    <a href="/app/auto/a21" class="labels__item__link">
+                        <img src="/app/img/dest/labels/hyndai.png" alt="">
+                    </a>
+                </div>
+                <div class="label__item">
+                    <a href="/app/auto/a22" class="labels__item__link">
+                        <img src="/app/img/dest/labels/kia.jpg" alt="">
+                    </a>
+                </div>
+                <div class="label__item">
+                    <a href="/app/auto/a23" class="labels__item__link">
+                        <img src="/app/img/dest/labels/landrover.jpg" alt="">
+                    </a>
+                </div>
+                <div class="label__item">
+                    <a href="/app/auto/a24" class="labels__item__link">
+                        <img src="/app/img/dest/labels/lexus.jpg" alt="">
+                    </a>
+                </div>
+                <div class="label__item">
+                    <a href="/app/auto/a25" class="labels__item__link">
+                        <img src="/app/img/dest/labels/lifan.png" alt="">
+                    </a>
+                </div>
+                <div class="label__item">
+                    <a href="/app/auto/a26" class="labels__item__link">
+                        <img src="/app/img/dest/labels/mini.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="labels__arrow__right">
+                <button>&gt;</button>
             </div>
         </div>
     </div>

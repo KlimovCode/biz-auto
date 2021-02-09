@@ -44,6 +44,7 @@ function scripts() {
         'app/js/chair.js', // chair logic switch images
         'app/js/cart.js', // cart logic
         'app/js/popup.js', // popup logic
+        'app/js/labels.js', // popup logic
         'app/js/app.js', // Пользовательские скрипты, использующие библиотеку, должны быть подключены в конце
     ])
         .pipe(concat('app.min.js')) // Конкатенируем в один файл
