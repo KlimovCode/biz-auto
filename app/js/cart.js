@@ -125,6 +125,8 @@ $(document).ready(function() {
         cart.goods = newGoods
         localStorage.setItem('cart', JSON.stringify(cart))
         showCart()
+        renderCart()
+        checkCheckedInput()
     })
 
 })
