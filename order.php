@@ -5,7 +5,7 @@ $message = "Ваше имя: ".$_POST['name']."<br>";//присвоить пер
 //$message .= "E-mail: ".$_POST['email']."<br>"; //полученное из формы name=email
 $message .= "Номер телефона: ".$_POST['phone']."<br>"; //полученное из формы name=phone
 $message .= "Адрес: ".$_POST['addres']."<br>"; //полученное из формы name=phone
-//$message .= "Сообщение: ".$_POST['message']."<br>"; //полученное из формы name=message
+$message .= "Сообщение: ".$_POST['msg']."<br>"; //полученное из формы name=message
 $headers  = 'MIME-Version: 1.0' . "\r\n"; // заголовок соответствует формату плюс символ перевода строки
 $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n"; // указывает на тип посылаемого контента
 
