@@ -25,21 +25,20 @@
             <div class="footer__col">
                 <div class="footer__list__title">ОСНОВНОЕ МЕНЮ:</div>
                 <ul class="footer__list">
-                    <li class="footer__list__item"><a href="">Каталог товаров</a></li>
-                    <li class="footer__list__item"><a href="">Главная</a></li>
-                    <li class="footer__list__item"><a href="">Установка</a></li>
-                    <li class="footer__list__item"><a href="">О нас</a></li>
-                    <li class="footer__list__item"><a href="">Наши работы</a></li>
-                    <li class="footer__list__item"><a href="">Контакты</a></li>
+                    <li class="footer__list__item"><a href="/app/auto">Каталог товаров</a></li>
+                    <li class="footer__list__item"><a href="/">Главная</a></li>
+                    <li class="footer__list__item"><a href="/app/mounting">Установка</a></li>
+                    <li class="footer__list__item"><a href="/app/about">О нас</a></li>
+                    <li class="footer__list__item"><a href="/app/contacts">Контакты</a></li>
                 </ul>
             </div>
             <div class="footer__col">
                 <div class="footer__list__title">КАТЕГОРИИ ТОВАРОВ:</div>
                 <ul class="footer__list">
-                    <li class="footer__list__item"><a href="">Автоковрики</a></li>
-                    <li class="footer__list__item"><a href="">Авточехлы</a></li>
-                    <li class="footer__list__item"><a href="">Аксессуары</a></li>
-                    <li class="footer__list__item"><a href="">Накидки</a></li>
+                    <li class="footer__list__item"><a href="/app/auto">Автоковрики</a></li>
+                    <li class="footer__list__item"><a href="/app/auto">Авточехлы</a></li>
+                    <li class="footer__list__item"><a href="/app/auto">Аксессуары</a></li>
+                    <li class="footer__list__item"><a href="/app/auto">Накидки</a></li>
                 </ul>
             </div>
             <div class="footer__col">
