@@ -45,6 +45,7 @@ function scripts() {
         'app/js/cart.js', // cart logic
         'app/js/popup.js', // popup logic
         'app/js/labels.js', // popup logic
+        'app/js/tabs.js', // tabs logic
         'app/js/app.js', // Пользовательские скрипты, использующие библиотеку, должны быть подключены в конце
     ])
         .pipe(concat('app.min.js')) // Конкатенируем в один файл
@@ -88,4 +89,4 @@ exports.cleanimg = cleanimg;
 exports.build = series(styles, scripts, images, buildcopy);
 
 // Экспортируем дефолтный таск с нужным набором функций
-exports.default = parallel(scripts, styles, images, browsersync, startwatch);
+exports.default = parallel(scripts, styles, browsersync, startwatch);
