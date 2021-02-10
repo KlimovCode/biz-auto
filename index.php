@@ -18,6 +18,8 @@ if(preg_match("/app\/auto\/a\d{1,2}\/m\d{1,3}\/sm\d{1,2}/", $_GET['route'])) {
     require_once "./order.php";
 } elseif(preg_match("/app\/success/", $_GET['route'])) {
     require_once "./app/content/success.php";
+} elseif(preg_match("/app\/admin/", $_GET['route'])) {
+    require_once "./app/content/admin.php";
 } else {
     switch ($_GET['route']) {
         case 'app/auto':
