@@ -11,7 +11,7 @@
                     6500 руб.
                 </div>
                 <div class="overview__btn">
-                    <a href="" class="overview__btn--link">В каталог</a>
+                    <a href="/app/auto" class="overview__btn--link">В каталог</a>
                 </div>
             </div>
             <div class="overview__card overview__card--second">
@@ -24,7 +24,7 @@
                     2500 руб.
                 </div>
                 <div class="overview__btn">
-                    <a href="" class="overview__btn--link">В каталог</a>
+                    <a href="/app/auto" class="overview__btn--link">В каталог</a>
                 </div>
             </div>
             <div class="overview__card overview__card--third">
@@ -37,7 +37,7 @@
                     700 руб.
                 </div>
                 <div class="overview__btn">
-                    <a href="" class="overview__btn--link">В каталог</a>
+                    <a href="/app/auto" class="overview__btn--link">В каталог</a>
                 </div>
             </div>
         </div>
