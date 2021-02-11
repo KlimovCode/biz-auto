@@ -4,7 +4,16 @@
   margin-top: 100px;
   padding: 0;
   height: 100vh;
-  @media (max-width: 651px) {
+  @media (max-width: 710px) {
+    height: 90vh;
+  }
+  @media (max-width: 650px) {
     height: 50vh;
+  }
+  @media (max-width: 451px) {
+    height: 45vh;
+  }
+  @media (max-width: 361px) {
+    height: 40vh;
   }
 }
