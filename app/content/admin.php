@@ -5,19 +5,30 @@
             <div class="admin__wrap">
 
                 <?php
-                    function checkPriceFields() {
+                    function checkEntery() {
                         foreach ($_POST as $name) {
-                            if($name != '') return true;
+                            if($_POST['name'] == 'admin' && $_POST['password'] == 'admin') return true;
                         }
+                        return false;
+                    }
+
+                    function checkPriceFields() {
+                        foreach ($_POST as $name => $value) {
+                            if($value != '') return true;
+                        }
+                        return false;
+                    }
+                    function updatePrice() {
+                        require_once "./app/db/setPrice.php";
                     }
 
                     if(checkPriceFields()) {
-                        echo '<h2>change price</h2>';
+                        updatePrice();
+                        echo '<h2>Ценны изменены</h2>';
                         var_dump($_POST);
                         require_once './app/content/admin/panel.php';
-                    } elseif($_POST['name'] == 'admin' && $_POST['password'] == 'admin') {
+                    } elseif(checkEntery()) {
                         echo '<h2>Вход выполнен</h2>';
-                        updatePrice();
                         require_once './app/content/admin/panel.php';
                     } else {
                         echo '<h2>Пожалуйста введите логин и пароль</h2>';

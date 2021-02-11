@@ -14,41 +14,7 @@
                         <th>текущая цена</th>
                         <th>установить цену</th>
                     </tr>
-                    <tr>
-                        <td>Алькантара</td>
-                        <td>7000</td>
-                        <td>
-                            <input type="text" name="price">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Экокожа</td>
-                        <td>7000</td>
-                        <td>
-                            <input type="text" name="price">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Алькантара "Ромб"</td>
-                        <td>7000</td>
-                        <td>
-                            <input type="text" name="price">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Экокожа "Ромб"</td>
-                        <td>7000</td>
-                        <td>
-                            <input type="text" name="price">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Экокожа+Велюр</td>
-                        <td>7000</td>
-                        <td>
-                            <input type="text" name="price">
-                        </td>
-                    </tr>
+                    <?php require_once "./app/db/getpanelfabrics.php" ?>
                 </table>
                 <button type="submit">Сохранить</button>
             </form>
