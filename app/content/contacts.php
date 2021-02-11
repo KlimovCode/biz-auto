@@ -20,17 +20,17 @@
             </div>
             <div class="contactform">
                 <h3 class="main__subtitle">Связаться с нами:</h3>
-                <form action="" class="contactform__form">
+                <form action="/app/contacts.php" method="POST" class="contactform__form">
                     <div class="contactform__data">
                         <div class="contactform__data__name">
-                            <input type="text" placeholder="Ваше имя">
+                            <input type="text" placeholder="Ваше имя" name="name">
                         </div>
                         <div class="contactform__data__phone">
-                            <input type="text" placeholder="Ваш телефон">
+                            <input type="text" placeholder="Ваш телефон" name="phone">
                         </div>
                     </div>
                     <div class="contactform__message">
-                        <textarea name="" placeholder="Ваше сообщение"></textarea>
+                        <textarea name="message" placeholder="Ваше сообщение"></textarea>
                     </div>
                     <div class="contactform__btn">
                         <button type="submit">Отправить</button>
