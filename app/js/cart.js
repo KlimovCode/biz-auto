@@ -99,12 +99,16 @@ $(document).ready(function() {
     showCart()
     checkCheckedInput()
     actualPrice()
+    handlerToggle()
+    handlerDelete()
 
-    $(".cart__table__inside__input").click(function (e) {
-        toggleInput(e)
-        actualPrice()
-        changePrice()
-    })
+    function handlerToggle() {
+        $(".cart__table__inside__input").click(function (e) {
+            toggleInput(e)
+            actualPrice()
+            changePrice()
+        })
+    }
 
     function changePrice() {
         let cart = JSON.parse(localStorage.getItem('cart'))
@@ -114,19 +118,23 @@ $(document).ready(function() {
         }
     }
 
-    $(".delbtn").click(function (e) {
-        let deleteItemId = e.target.id.split("-")[1]
-        let cart = JSON.parse(localStorage.getItem('cart'))
-        let goods = cart.goods
-        let newGoods = []
-        for (const good of goods) {
-            if(good.time != deleteItemId) newGoods.push(good)
-        }
-        cart.goods = newGoods
-        localStorage.setItem('cart', JSON.stringify(cart))
-        showCart()
-        renderCart()
-        checkCheckedInput()
-    })
+    function handlerDelete() {
+        $(".delbtn").click(function (e) {
+            let deleteItemId = e.target.id.split("-")[1]
+            let cart = JSON.parse(localStorage.getItem('cart'))
+            let goods = cart.goods
+            let newGoods = []
+            for (const good of goods) {
+                if(good.time != deleteItemId) newGoods.push(good)
+            }
+            cart.goods = newGoods
+            localStorage.setItem('cart', JSON.stringify(cart))
+            showCart()
+            renderCart()
+            checkCheckedInput()
+            handlerToggle()
+            handlerDelete()
+        })
+    }
 
 })
