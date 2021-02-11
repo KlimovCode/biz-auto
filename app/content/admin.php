@@ -14,7 +14,11 @@
 
                     function checkPriceFields() {
                         foreach ($_POST as $name => $value) {
-                            if($value != '') return true;
+                            if($name == 'alcantara') return true;
+                            if($name == 'alcantararomb') return true;
+                            if($name == 'velur') return true;
+                            if($name == 'ecocloth') return true;
+                            if($name == 'ecoclothromb') return true;
                         }
                         return false;
                     }
@@ -24,8 +28,6 @@
 
                     if(checkPriceFields()) {
                         updatePrice();
-                        echo '<h2>Ценны изменены</h2>';
-                        var_dump($_POST);
                         require_once './app/content/admin/panel.php';
                     } elseif(checkEntery()) {
                         echo '<h2>Вход выполнен</h2>';
