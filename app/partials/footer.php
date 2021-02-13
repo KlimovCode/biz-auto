@@ -41,14 +41,14 @@
 <!--                    <li class="footer__list__item"><a href="/app/auto">Накидки</a></li>-->
 <!--                </ul>-->
 <!--            </div>-->
-            <div class="footer__col">
-                <div class="footer__list__title">ПОИСК ПО ТОВАРАМ:</div>
-                <form action="" class="footer__search">
-                    <input type="text" class="footer__search__input" placeholder="Поиск...">
-                    <ion-icon name="search-outline" class="footer__search__icon"></ion-icon>
-                    <button type="submit" class="footer__search__btn"></button>
-                </form>
-            </div>
+<!--            <div class="footer__col">-->
+<!--                <div class="footer__list__title">ПОИСК ПО ТОВАРАМ:</div>-->
+<!--                <form action="" class="footer__search">-->
+<!--                    <input type="text" class="footer__search__input" placeholder="Поиск...">-->
+<!--                    <ion-icon name="search-outline" class="footer__search__icon"></ion-icon>-->
+<!--                    <button type="submit" class="footer__search__btn"></button>-->
+<!--                </form>-->
+<!--            </div>-->
         </div>
         <div class="footer__copyright">
             <div class="footer__copyright__host">

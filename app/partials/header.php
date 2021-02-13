@@ -2,12 +2,12 @@
     <div class="container">
         <div class="header__inner">
             <div class="logo"></div>
-            <div class="search">
-                <form action="">
-                    <input type="text" placeholder="Поиск по товарам ..." class="search__input">
-                    <button type="submit" class="search__btn">ПОИСК</button>
-                </form>
-            </div>
+<!--            <div class="search">-->
+<!--                <form action="">-->
+<!--                    <input type="text" placeholder="Поиск по товарам ..." class="search__input">-->
+<!--                    <button type="submit" class="search__btn">ПОИСК</button>-->
+<!--                </form>-->
+<!--            </div>-->
             <div class="phone">
                 <div class="phone__icon"><ion-icon name="call-outline"></ion-icon></div>
                 <div class="phone__text">
