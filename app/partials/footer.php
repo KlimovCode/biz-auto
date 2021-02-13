@@ -11,7 +11,7 @@
                 </div>
                 <div class="footer__whatsapp">
                     <ion-icon name="logo-whatsapp" class="footer__whatsapp__icon"></ion-icon>
-                    <a href="https://api.whatsapp.com/send?phone=89166896787" class="footer__whatsapp__link">WhatsApp</a>
+                    <a href="https://api.whatsapp.com/send?phone=+79166896787" class="footer__whatsapp__link">WhatsApp</a>
                 </div>
                 <div class="footer__email">
                     <ion-icon name="mail-outline" class="footer__email__icon"></ion-icon>

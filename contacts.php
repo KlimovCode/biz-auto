@@ -1,5 +1,5 @@
 <?php
-$to = "sergey.frolenko123@yandex.ru"; // емайл получателя данных из формы
+$to = "profavto.moscow@yandex.ru"; // емайл получателя данных из формы
 $subject = "Форма контактов на avtopilot"; // тема полученного емайла
 $message = "Ваше имя: ".$_POST['name']."<br>";//присвоить переменной значение, полученное из формы name=name
 //$message .= "E-mail: ".$_POST['email']."<br>"; //полученное из формы name=email
