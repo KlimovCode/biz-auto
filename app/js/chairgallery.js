@@ -25,4 +25,11 @@ $(document).ready(function() {
         });
     }
     chairgalleryPopup()
+
+    function getDataChairs() {
+        const result = []
+        let chairs = document.querySelectorAll(".chairgallery__btn")
+        console.log('hi')
+    }
+    getDataChairs()
 })
