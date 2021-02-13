@@ -46,6 +46,7 @@ function scripts() {
         'app/js/popup.js', // popup logic
         'app/js/labels.js', // popup logic
         'app/js/tabs.js', // tabs logic
+        'app/js/chairgallery.js', // chairgallery logic
         'app/js/app.js', // Пользовательские скрипты, использующие библиотеку, должны быть подключены в конце
     ])
         .pipe(concat('app.min.js')) // Конкатенируем в один файл

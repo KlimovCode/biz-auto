@@ -5,6 +5,7 @@
             <div class="chair__wrap">
                 <div class="chair__inner">
                     <?php
+                        require_once "chairgallery.php";
                         require_once "chairbigimg.php";
                         require_once "chairfabrics.php";
                         require_once "chaircolor.php";

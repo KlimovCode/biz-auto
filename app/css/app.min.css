@@ -906,7 +906,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .chair__bigimg {
   max-width: 300px;
-  display: none; }
+  display: none;
+  cursor: pointer; }
 
 .chair__bigimg img {
   max-width: 300px; }
@@ -1148,3 +1149,22 @@ h1, h2, h3, h4, h5, h6 {
   background-color: aqua;
   top: 0;
   left: 0; }
+
+.chairgallery__popup {
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center; }
+
+.chairgallery__closebtn {
+  display: block;
+  position: absolute;
+  right: 20px;
+  cursor: pointer; }
+
+.chairgallery__popup--hidden {
+  display: none; }
