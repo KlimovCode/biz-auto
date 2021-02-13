@@ -1,7 +1,7 @@
 <header class="header">
     <div class="container">
         <div class="header__inner">
-            <div class="logo"></div>
+            <a href="/"><div class="logo"></div></a>
 <!--            <div class="search">-->
 <!--                <form action="">-->
 <!--                    <input type="text" placeholder="Поиск по товарам ..." class="search__input">-->

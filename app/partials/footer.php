@@ -2,9 +2,9 @@
     <div class="container">
         <div class="footer__inner">
             <div class="footer__col">
-                <div class="footer__logo">
+                <a href="/"><div class="footer__logo">
                     <img src="/app/img/dest/logo-big-transparent.png" alt="logo">
-                </div>
+                </div></a>
                 <div class="footer__phone">
                     <ion-icon name="call-outline" class="footer__phone__icon"></ion-icon>
                     <a href="tel:89166896787" class="footer__phone__link">8 (916) 689-67-87</a>
