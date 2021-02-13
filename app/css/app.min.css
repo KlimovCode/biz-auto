@@ -299,6 +299,12 @@ h1, h2, h3, h4, h5, h6 {
   @media (max-width: 361px) {
     .intro {
       height: 40vh; } }
+  @media (max-width: 331px) {
+    .intro {
+      height: 35vh; } }
+  @media (max-width: 291px) {
+    .intro {
+      height: 30vh; } }
 
 .rslides__wrap {
   position: relative;
