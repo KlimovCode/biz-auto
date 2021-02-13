@@ -57,6 +57,9 @@
   cursor: pointer;
   text-shadow: #fff 0 0 20px;
 }
+.header__phone__link {
+  text-decoration: none;
+}
 .phone {
   display: flex;
   flex-direction: row;

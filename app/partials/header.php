@@ -8,13 +8,13 @@
 <!--                    <button type="submit" class="search__btn">ПОИСК</button>-->
 <!--                </form>-->
 <!--            </div>-->
-            <div class="phone">
+            <a href="tel:89166896787" class="header__phone__link"><div class="phone">
                 <div class="phone__icon"><ion-icon name="call-outline"></ion-icon></div>
                 <div class="phone__text">
                     <div class="phone__title">Телефон:</div>
                     <div class="phone__number">8 (916) 689-67-87</div>
                 </div>
-            </div>
+            </div></a>
             <div class="callback">
                 <a href="#" class="callback__btn">Обратный звонок</a>
             </div>
