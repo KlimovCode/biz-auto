@@ -7,9 +7,13 @@
         </div>
 
         <div class="chairgallery__middle">
-            <div class="chairgallery__prevbtn"></div>
+            <div class="chairgallery__prevbtn">
+                <div class="chairgallery__prevbtn__triangle chairgallery__prevbtn__triangle--left"></div>
+            </div>
             <div class="chairgallery__bigimg"></div>
-            <div class="chairgallery__nextbtn"></div>
+            <div class="chairgallery__nextbtn">
+                <div class="chairgallery__prevbtn__triangle chairgallery__prevbtn__triangle--right"></div>
+            </div>
         </div>
 
         <div class="chairgallery__bottom">
