@@ -27,20 +27,25 @@ $(document).ready(function() {
     chairgalleryPopup()
 
     function getDataChairs() {
-        /*
-        * What I want to see
-        * {
-        *   titlecolor: 'Бежевый + бежевый',
-        *   bigimg: '/app/img/chair/Алькантара/Бежевый + бежевый/big.jpg',
-        *   smallimg: '/app/img/chair/Алькантара/Бежевый + бежевый/small.jpg',
-        * }
-         */
-        const result = []
-        let chairbigimgs = $(".chair__bigimg img")
-        for (const chairbigimg of chairbigimgs) {
-            let chairbigimg_link = $(chairbigimg).attr('src')
-            console.log(chairbigimg_link)
+        function gather(num) {
+            return {
+                bigimg: $(".chair__bigimg--"+num+" img").attr('src'),
+                colorname: $(".chair__bigimg--"+num+" span").text(),
+                bigimg: $(".chair__color__item--"+num+" img").attr('src'),
+            }
         }
+
+        let totalCoutnChairs = $(".chair__bigimg img").length
+        const result = []
+
+        for (let i = 0; i < totalCoutnChairs; i++) {
+            result.push(gather(i+1))
+        }
+        console.log(result)
     }
     getDataChairs()
+
+
+
+
 })
