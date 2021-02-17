@@ -1,32 +1,6 @@
 $(document).ready(function() {
     let chairgallery = []
-
-    function chairgalleryPopup() {
-        var popup = document.querySelector(".chairgallery__popup");
-        var popupBtnShow = document.querySelectorAll(".chairgallery__btn");
-        var close = document.querySelector(".chairgallery__closebtn");
-
-        for (const popupBtnShowElement of popupBtnShow) {
-            popupBtnShowElement.addEventListener("click", function(event){
-                console.log('hi')
-                event.preventDefault();
-                popup.classList.remove("chairgallery__popup--hidden");
-            });
-        }
-
-        popup.addEventListener("click", function(event) {
-            e = event || window.event
-            if (e.target == this) {
-                popup.classList.add("chairgallery__popup--hidden");
-            }
-        });
-
-        close.addEventListener("click", function(event){
-            event.preventDefault();
-            popup.classList.add("chairgallery__popup--hidden");
-        });
-    }
-    chairgalleryPopup()
+    let currentBigimg = 0
 
     function getDataChairs() {
         function gather(num) {
@@ -46,11 +20,10 @@ $(document).ready(function() {
         console.log(result)
         chairgallery = result
     }
-    getDataChairs()
 
-    function chairgalleryRender() {
+    function chairgalleryRender(currentBigimg) {
         let smallimages = ''
-        let currentBigimg = 1
+        console.log(currentBigimg)
 
         function smallimgRender() {
             for (let i = 0; i < chairgallery.length; i++) {
@@ -63,15 +36,49 @@ $(document).ready(function() {
         function bigimgRender(num) {
             $(".chairgallery__bigimg").html(`<img src='${chairgallery[num].bigimg}'>`)
         }
-        bigimgRender(1)
+        bigimgRender(currentBigimg-1)
 
         function colornameRender(num) {
             $(".chairgallery__colortitle").html(`<span>${chairgallery[num].colorname}</span>`)
         }
-        colornameRender(1)
+        colornameRender(currentBigimg-1)
 
     }
-    chairgalleryRender()
+
+    function chairgalleryPopup() {
+        var popup = document.querySelector(".chairgallery__popup");
+        var popupBtnShow = document.querySelectorAll(".chairgallery__btn");
+        var close = document.querySelector(".chairgallery__closebtn");
+
+        for (const popupBtnShowElement of popupBtnShow) {
+            popupBtnShowElement.addEventListener("click", function(event){
+                event.preventDefault();
+                popup.classList.remove("chairgallery__popup--hidden");
+                let currentImg = event.target.parentElement.classList[1].substr(-2)
+                currentBigimg = Math.abs(currentImg)
+                console.log('hi')
+                getDataChairs()
+                chairgalleryRender(currentBigimg)
+            });
+        }
+
+
+        popup.addEventListener("click", function(event) {
+            e = event || window.event
+            if (e.target == this) {
+                popup.classList.add("chairgallery__popup--hidden");
+            }
+        });
+
+        close.addEventListener("click", function(event){
+            event.preventDefault();
+            popup.classList.add("chairgallery__popup--hidden");
+        });
+    }
+    chairgalleryPopup()
+
+
+
 
 
 })
