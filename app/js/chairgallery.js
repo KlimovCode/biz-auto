@@ -23,7 +23,6 @@ $(document).ready(function() {
 
     function chairgalleryRender(currentBigimg) {
         let smallimages = ''
-        console.log(currentBigimg)
 
         function smallimgRender() {
             for (let i = 0; i < chairgallery.length; i++) {
@@ -77,7 +76,22 @@ $(document).ready(function() {
     }
     chairgalleryPopup()
 
-
+    function nextBtn() {
+        $(".chairgallery__nextbtn").click(function(){
+            currentBigimg >= chairgallery.length ? currentBigimg = 1 : currentBigimg++
+            console.log(currentBigimg)
+            chairgalleryRender(currentBigimg)
+        })
+    }
+    nextBtn()
+    function prevBtn() {
+        $(".chairgallery__prevbtn").click(function(){
+            currentBigimg <= 1 ? currentBigimg = chairgallery.length : currentBigimg--
+            console.log(currentBigimg)
+            chairgalleryRender(currentBigimg)
+        })
+    }
+    prevBtn()
 
 
 

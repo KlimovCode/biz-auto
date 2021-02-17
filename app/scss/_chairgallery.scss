@@ -59,6 +59,7 @@
 .chairgallery__nextbtn, .chairgallery__prevbtn {
   position: relative;
   background: #eee;
+  cursor: pointer;
   padding: 0 5px;
   display: flex;
   flex-direction: column;
