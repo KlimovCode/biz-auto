@@ -77,12 +77,14 @@ $(document).ready(function() {
             e = event || window.event
             if (e.target == this) {
                 popup.classList.add("chairgallery__popup--hidden");
+                rerenderChair(currentBigimg)
             }
         });
 
         close.addEventListener("click", function(event){
             event.preventDefault();
             popup.classList.add("chairgallery__popup--hidden");
+            rerenderChair(currentBigimg)
         });
     }
     chairgalleryPopup()

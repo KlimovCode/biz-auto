@@ -9,10 +9,11 @@ function renderCart() {
 }
 renderCart()
 
-$(document).ready(function() {
-    let img = 1
+function rerenderChair(n) {
+    let img = n
     let fabric = 'alcantara'
 
+    $(".chair__bigimg").css({display: 'none'})
     $(".chair__bigimg--"+img).show()
     $(".chair__color--"+fabric).css({display: 'flex'})
 
@@ -62,4 +63,8 @@ $(document).ready(function() {
 
         renderCart()
     })
+}
+
+$(document).ready(function() {
+    rerenderChair(1)
 })
