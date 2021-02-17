@@ -3,7 +3,9 @@
 
         <div class="chairgallery__top">
             <div class="chairgallery__smallimgs"></div>
-            <div class="chairgallery__closebtn">X</div>
+            <div class="chairgallery__closebtn">
+                <ion-icon name="close-outline" class="chairgallery__closebtn__icon"></ion-icon>
+            </div>
         </div>
 
         <div class="chairgallery__middle">
