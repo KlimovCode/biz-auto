@@ -14,6 +14,15 @@ function rerenderChair(n) {
     let fabric = 'alcantara'
 
     $(".chair__bigimg").css({display: 'none'})
+    $(".chair__color").css({display: 'none'})
+    $(".chair__bigimg--"+img).show()
+    $(".chair__color--"+fabric).css({display: 'flex'})
+}
+
+$(document).ready(function() {
+    let img = 1
+    let fabric = 'alcantara'
+
     $(".chair__bigimg--"+img).show()
     $(".chair__color--"+fabric).css({display: 'flex'})
 
@@ -63,8 +72,4 @@ function rerenderChair(n) {
 
         renderCart()
     })
-}
-
-$(document).ready(function() {
-    rerenderChair(1)
 })
