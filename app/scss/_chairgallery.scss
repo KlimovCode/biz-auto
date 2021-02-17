@@ -34,7 +34,6 @@
 .chairgallery__top {
   height: 10vh;
   width: 90%;
-  background: aqua;
   margin: 0 auto;
   overflow: hidden;
   padding-top: 3vh;
@@ -47,37 +46,36 @@
   height: 70vh;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  position: relative;
+  justify-content: center;
   padding-top: 3vh;
 }
-
-.chairgallery__prevbtn__triangle {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  top: 30%;
+.chairgallery__nextbtn, .chairgallery__prevbtn {
+  position: relative;
+  background: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .chairgallery__prevbtn__triangle--left {
   border-top: 15px solid transparent;
   border-right: 30px solid #aaa;
   border-bottom: 15px solid transparent;
-  left: 10%;
 }
 .chairgallery__prevbtn__triangle--right {
   border-top: 15px solid transparent;
   border-left: 30px solid #aaa;
   border-bottom: 15px solid transparent;
-  right: 10%;
 }
 
 .chairgallery__bigimg {
-  display: block;
-  background: aqua;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .chairgallery__bigimg img {
-  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .chairgallery__bottom {
