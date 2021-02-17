@@ -31,10 +31,19 @@
   width: 70%;
   margin: 0 auto;
   overflow: hidden;
-  padding-top: 3vh;
+  padding-top: 1vh;
 }
 .chairgallery__smallimgs {
+  position: relative;
   width: calc(30px * 71);
+}
+.chairgallery__smallimgs img {
+  height: 100%;
+  padding: 0;
+}
+.chairgallery__smallimgs__item--active {
+  border: 1px solid $primary-color;
+  border-radius: 5px;
 }
 .chairgallery__closebtn {
   display: block;
