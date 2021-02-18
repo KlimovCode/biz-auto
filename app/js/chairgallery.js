@@ -4,19 +4,18 @@ $(document).ready(function() {
 
     function getDataChairs() {
         function gather(num) {
-            console.log($(".chair__color__item--"+num).parents()[0].classList[1])
             return {
                 bigimg: $(".chair__bigimg--"+num+" img").attr('src'),
                 colorname: $(".chair__bigimg--"+num+" span").text(),
                 smallimg: $(".chair__color__item--"+num+" img").attr('src'),
-                // fabric: $(".chair__color__item--"+num)
+                fabric: $(".chair__color__item--"+num).parents()[0].classList[1].match(/--(.*)/)[1]
             }
         }
 
-        let totalCoutnChairs = $(".chair__bigimg img").length
+        let totalCountChairs = $(".chair__bigimg img").length
         const result = []
 
-        for (let i = 0; i < totalCoutnChairs; i++) {
+        for (let i = 0; i < totalCountChairs; i++) {
             result.push(gather(i+1))
         }
         console.log(result)
@@ -79,14 +78,14 @@ $(document).ready(function() {
             e = event || window.event
             if (e.target == this) {
                 popup.classList.add("chairgallery__popup--hidden");
-                rerenderChair(currentBigimg)
+                rerenderChair(currentBigimg, chairgallery[currentBigimg].fabric)
             }
         });
 
         close.addEventListener("click", function(event){
             event.preventDefault();
             popup.classList.add("chairgallery__popup--hidden");
-            rerenderChair(currentBigimg)
+            rerenderChair(currentBigimg, chairgallery[currentBigimg].fabric)
         });
     }
     chairgalleryPopup()

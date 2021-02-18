@@ -9,14 +9,15 @@ function renderCart() {
 }
 renderCart()
 
-function rerenderChair(n) {
+function rerenderChair(n,f) {
     let img = n
-    let fabric = 'alcantara'
+    let fabric = f
 
     $(".chair__bigimg").css({display: 'none'})
     $(".chair__color").css({display: 'none'})
     $(".chair__bigimg--"+img).show()
     $(".chair__color--"+fabric).css({display: 'flex'})
+    $("#"+fabric).attr('checked','checked')
 }
 
 $(document).ready(function() {
