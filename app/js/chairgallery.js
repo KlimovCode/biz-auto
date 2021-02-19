@@ -73,7 +73,6 @@ $(document).ready(function() {
             });
         }
 
-
         popup.addEventListener("click", function(event) {
             e = event || window.event
             if (e.target == this) {
@@ -82,7 +81,7 @@ $(document).ready(function() {
             }
         });
 
-        close.addEventListener("click", function(event){
+        close.addEventListener("click", function(event) {
             event.preventDefault();
             popup.classList.add("chairgallery__popup--hidden");
             rerenderChair(currentBigimg, chairgallery[currentBigimg].fabric)
