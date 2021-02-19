@@ -9,24 +9,16 @@ function renderCart() {
 }
 renderCart()
 
-function rerenderChair(n,f) {
-    let img = n
-    let fabric = f
-
+function renderChair(img = 1, fabric = 'alcantara') {
     $(".chair__bigimg").css({display: 'none'})
     $(".chair__color").css({display: 'none'})
+
     $(".chair__bigimg--"+img).show()
     $(".chair__color--"+fabric).css({display: 'flex'})
     $("#"+fabric).attr('checked','checked')
 }
 
-$(document).ready(function() {
-    let img = 1
-    let fabric = 'alcantara'
-
-    $(".chair__bigimg--"+img).show()
-    $(".chair__color--"+fabric).css({display: 'flex'})
-
+function chairHandlers(img = 1, fabric = 'alcantara') {
     $(".chair__fabrics label").on('click', function (e) {
         let temp = e.target.id
         if(temp) fabric = temp
@@ -47,6 +39,7 @@ $(document).ready(function() {
         let price = $(".chair__fabrics label[for="+fabric+"] .fabric__price").text()
         let fabricRus = $(".chair__fabrics label[for="+fabric+"] .fabric__name").text()
         let fabricColor = $(".chair__bigimg--"+img+" span").text()
+
         let data = {
             imgNumber: img,
             titleAuto: title,
@@ -58,6 +51,7 @@ $(document).ready(function() {
             price,
             actualPrice: price
         }
+
         let cart = {}
         if(localStorage.getItem('cart')) {
             cart = JSON.parse(localStorage.getItem('cart'))
@@ -69,8 +63,12 @@ $(document).ready(function() {
             cart = {goods: [{time, ...data}]}
             localStorage.setItem('cart', JSON.stringify(cart))
         }
-        console.log(JSON.parse(localStorage.getItem('cart')))
 
         renderCart()
     })
+}
+
+$(document).ready(function() {
+    renderChair()
+    chairHandlers()
 })

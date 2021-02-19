@@ -1,6 +1,7 @@
+let chairgallery = []
+let currentBigimg = 0
+
 $(document).ready(function() {
-    let chairgallery = []
-    let currentBigimg = 0
 
     function getDataChairs() {
         function gather(num) {
