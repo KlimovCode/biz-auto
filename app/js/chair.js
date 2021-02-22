@@ -11,6 +11,7 @@ renderCart()
 
 function renderChair(img = 1, fabric = 'alcantara') {
     if(img == 0) img = 1
+    if(currentBigimg) img = currentBigimg
 
     $(".chair__bigimg").css({display: 'none'})
     $(".chair__color").css({display: 'none'})
@@ -21,6 +22,9 @@ function renderChair(img = 1, fabric = 'alcantara') {
 }
 
 function chairHandlers(img = 1, fabric = 'alcantara') {
+    if(chairgallery.length != 0) fabric = chairgallery[currentBigimg-1].fabric
+    if(currentBigimg) img = currentBigimg
+
     $(".chair__fabrics label").on('click', function (e) {
         let temp = e.target.id
         if(temp) fabric = temp
@@ -71,7 +75,6 @@ function chairHandlers(img = 1, fabric = 'alcantara') {
 }
 
 $(document).ready(function() {
-    console.log('document ready - chair ', currentBigimg)
-    renderChair(currentBigimg)
+    renderChair()
     chairHandlers()
 })

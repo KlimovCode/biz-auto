@@ -78,7 +78,6 @@ $(document).ready(function() {
             e = event || window.event
             if (e.target == this) {
                 popup.classList.add("chairgallery__popup--hidden");
-                console.log('popup over close ', chairgallery[currentBigimg-1].fabric)
                 renderChair(currentBigimg, chairgallery[currentBigimg-1].fabric)
             }
         });
@@ -86,7 +85,7 @@ $(document).ready(function() {
         close.addEventListener("click", function(event) {
             event.preventDefault();
             popup.classList.add("chairgallery__popup--hidden");
-            renderChair(currentBigimg, chairgallery[currentBigimg].fabric)
+            renderChair(currentBigimg, chairgallery[currentBigimg-1].fabric)
         });
     }
     chairgalleryPopup()

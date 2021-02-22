@@ -13,7 +13,7 @@ if($result) {
     while ($row = mysqli_fetch_row($result)) {
         if($row[3] == 'alcantara') {
             echo "<label for=\"$row[3]\">
-                <input type=\"radio\" id=\"$row[3]\" name=\"fabrics\" checked>
+                <input type=\"radio\" id=\"$row[3]\" name=\"fabrics\">
                 <span class=\"fabric__name\">$row[1]</span>
                 <span class=\"fabric__price\">$row[2] руб.</span>
             </label>";
