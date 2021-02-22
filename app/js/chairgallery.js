@@ -78,14 +78,15 @@ $(document).ready(function() {
             e = event || window.event
             if (e.target == this) {
                 popup.classList.add("chairgallery__popup--hidden");
-                rerenderChair(currentBigimg, chairgallery[currentBigimg].fabric)
+                console.log('popup over close ', chairgallery[currentBigimg-1].fabric)
+                renderChair(currentBigimg, chairgallery[currentBigimg-1].fabric)
             }
         });
 
         close.addEventListener("click", function(event) {
             event.preventDefault();
             popup.classList.add("chairgallery__popup--hidden");
-            rerenderChair(currentBigimg, chairgallery[currentBigimg].fabric)
+            renderChair(currentBigimg, chairgallery[currentBigimg].fabric)
         });
     }
     chairgalleryPopup()
@@ -93,7 +94,6 @@ $(document).ready(function() {
     function nextBtn() {
         $(".chairgallery__nextbtn").click(function(){
             currentBigimg >= chairgallery.length ? currentBigimg = 1 : currentBigimg++
-            console.log(currentBigimg)
             chairgalleryRender(currentBigimg)
         })
     }
@@ -101,7 +101,6 @@ $(document).ready(function() {
     function prevBtn() {
         $(".chairgallery__prevbtn").click(function(){
             currentBigimg <= 1 ? currentBigimg = chairgallery.length : currentBigimg--
-            console.log(currentBigimg)
             chairgalleryRender(currentBigimg)
         })
     }

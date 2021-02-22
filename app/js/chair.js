@@ -10,6 +10,8 @@ function renderCart() {
 renderCart()
 
 function renderChair(img = 1, fabric = 'alcantara') {
+    if(img == 0) img = 1
+
     $(".chair__bigimg").css({display: 'none'})
     $(".chair__color").css({display: 'none'})
 
@@ -69,6 +71,7 @@ function chairHandlers(img = 1, fabric = 'alcantara') {
 }
 
 $(document).ready(function() {
-    renderChair()
+    console.log('document ready - chair ', currentBigimg)
+    renderChair(currentBigimg)
     chairHandlers()
 })
