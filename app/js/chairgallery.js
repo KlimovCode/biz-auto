@@ -39,7 +39,6 @@ $(document).ready(function() {
 
             let imgwidth = 30
             let temp = imgwidth * currentBigimg-16
-            console.log(temp)
             $(".chairgallery__smallimgs").css({
                 'left': '-'+temp+'px'
             })
