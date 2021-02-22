@@ -26,7 +26,7 @@
                     </div>
                     <div class="cart__text">
                         <div class="cart__title">Корзина</div>
-                        <div class="cart__summ">0 руб.</div>
+                        <div class="cart__summ">оформить</div>
                     </div>
                 </a>
             </div>

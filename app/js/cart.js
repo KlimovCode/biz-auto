@@ -35,7 +35,7 @@ $(document).ready(function() {
                                     </td>
                                     <td>
                                         <label for="sewchechol-${goods[i].time}" class="cart__table__inside__input">
-                                            подшивка 1000 руб.
+                                            подшивка от 1000 руб.
                                             <input type="checkbox" name="sewchechol" id="sewchechol-${goods[i].time}">
                                         </label>
                                     </td>

@@ -72,6 +72,7 @@ function chairHandlers(img = 1, fabric = 'alcantara') {
 
         renderCart()
     })
+
 }
 
 $(document).ready(function() {
