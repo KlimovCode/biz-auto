@@ -97,9 +97,6 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row; }
-  @media (max-width: 500px) {
-    .phone {
-      display: none; } }
 
 .phone__icon {
   color: #5d321d;
@@ -120,6 +117,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #212121;
   font-size: 1em;
   font-weight: 700; }
+
+@media (max-width: 500px) {
+  .callback {
+    display: none; } }
 
 .callback__btn {
   display: block;

@@ -18,11 +18,12 @@ function renderChair(img = 1, fabric = 'alcantara') {
 
     $(".chair__bigimg--"+img).show()
     $(".chair__color--"+fabric).css({display: 'flex'})
+
     console.log(fabric)
     setTimeout(() => {
         $("#"+fabric).attr('checked','checked')
-    }, 100)
-    $("#"+fabric).attr('checked','checked')
+    }, 300)
+    // $("#"+fabric).attr('checked','checked')
 }
 
 function getData(img = 1, fabric = 'alcantara') {

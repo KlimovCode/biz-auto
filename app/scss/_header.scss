@@ -63,9 +63,7 @@
 .phone {
   display: flex;
   flex-direction: row;
-  @media (max-width: 500px) {
-    display: none;
-  }
+
 }
 .phone__icon {
   color: $primary-color;
@@ -82,6 +80,11 @@
   color: $secondary-color;
   font-size: 1em;
   font-weight: 700;
+}
+.callback {
+  @media (max-width: 500px) {
+    display: none;
+  }
 }
 .callback__btn {
   display: block;
