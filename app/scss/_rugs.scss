@@ -5,6 +5,14 @@
    width: 300px;
  }
 
-.chair__inner .rug__bigimg {
-
+.rugs__wrap {
+   display: flex;
+   flex-direction: row;
+}
+.rug__bigimg {
+  max-width: 300px;
+  display: none;
+}
+.rug__bigimg img {
+  max-width: 300px;
 }

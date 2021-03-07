@@ -26,10 +26,10 @@ if($result) {
             <img src="/app/img/rugs/'. $row[3] . '" alt=\"\">
             </div>';
     }
-    echo '<div class="rugs__wrap"';
+    echo '<div class="rugs__wrap">';
     echo $bigimg;
     echo $smallimg;
-    echo '<div class="rugs__wrap"';
+    echo '</div>';
 
     // очищаем результат
     mysqli_free_result($result);

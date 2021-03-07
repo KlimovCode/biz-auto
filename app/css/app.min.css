@@ -1290,3 +1290,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .common-card__img--rugsmodel {
   width: 300px; }
+
+.rugs__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.rug__bigimg {
+  max-width: 300px;
+  display: none; }
+
+.rug__bigimg img {
+  max-width: 300px; }
