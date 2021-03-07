@@ -14,7 +14,7 @@
                     <span href="/app/auto" class="overview__btn--link">В каталог</span>
                 </div>
             </div></a>
-            <a href="/app/auto" class="overview__card__link"><div class="overview__card overview__card--second">
+            <a href="/app/auto/rugs" class="overview__card__link"><div class="overview__card overview__card--second">
                 <div class="overview__title">
                     <div class="overview__subtitle">Машинные</div>
                     Коврики
