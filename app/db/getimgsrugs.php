@@ -15,8 +15,8 @@ $query = "SELECT * FROM rugsitems WHERE model_id='$model_id'";
 $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link));
 
 if($result) {
-    $bigimg = '';
-    $smallimg = '';
+    $bigimg = '<div class="rug__bigimg__wrap">';
+    $smallimg = '<div class="rug__smallimg__wrap">';
     while ($row = mysqli_fetch_row($result)) {
         $bigimg .= '<div class="rug__bigimg rug__bigimg--'. $row[0] . '">
             <img src="/app/img/rugs/img/'. $row[4] . '" alt=\"\">
@@ -27,8 +27,8 @@ if($result) {
             </div>';
     }
     echo '<div class="rugs__wrap">';
-    echo $bigimg;
-    echo $smallimg;
+    echo $bigimg . '</div>';
+    echo $smallimg . '</div>';
     echo '</div>';
 
     // очищаем результат
