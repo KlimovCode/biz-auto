@@ -11,11 +11,14 @@ function renderRug(n) {
 
 function handlerClickSmallImg() {
     $(".rug__small").on('click', (e) => {
-        console.log(e)
+        currentRug = $(e.currentTarget).attr('class').match(/--(\d+)/)[1]
+        console.log(currentRug)
+        renderRug(currentRug)
     })
 }
 
 $(document).ready(function() {
     currentRug = getCurrentRug()
     renderRug(currentRug)
+    handlerClickSmallImg()
 })
