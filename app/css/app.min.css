@@ -1284,3 +1284,6 @@ h1, h2, h3, h4, h5, h6 {
 .chairgallery__bottom {
   height: 10vh;
   padding-top: 3vh; }
+
+.common-card__img--rugs {
+  width: 200px; }

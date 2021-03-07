@@ -10,6 +10,8 @@ if(preg_match("/app\/auto\/a\d{1,2}\/m\d{1,3}\/sm\d{1,2}/", $_GET['route'])) {
     require_once "./app/content/submodels.php";
 } elseif(preg_match("/app\/auto\/a(\d{1,2}|50)$/", $_GET['route'])) {
     require_once "./app/content/models.php";
+} elseif(preg_match("/app\/auto\/rugs(\d{1,2}|50)$/", $_GET['route'])) {
+    require_once "./app/content/rugs/rugs.php";
 } elseif(preg_match("/app\/auto\/rugs/", $_GET['route'])) {
     require_once "./app/content/rugs/rugs.php";
 } elseif(preg_match("/app\/cart/", $_GET['route'])) {
