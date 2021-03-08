@@ -1,7 +1,7 @@
 let currentRug = 0
 
 function getCurrentRug() {
-    return $(".rug__bigimg").attr('class').split(/\s+/)[1].match(/--(\d+)/)[1]
+    if($(".rug__bigimg")) return $(".rug__bigimg").attr('class').split(/\s+/)[1].match(/--(\d+)/)[1]
 }
 
 function renderRug(n) {

@@ -146,23 +146,25 @@ $(document).ready(function() {
     function handlerDelete() {
         $(".delbtn").click(function (e) {
             let deleteItemId = e.target.id.split("-")[1]
-
             let cart = JSON.parse(localStorage.getItem('cart'))
-            let goods = cart.goods
 
-            let newGoods = []
-            for (const good of goods) {
-                if(good.time != deleteItemId) newGoods.push(good)
+            if(JSON.parse(localStorage.getItem('cart')).goods) {
+                let goods = JSON.parse(localStorage.getItem('cart')).goods
+                let newGoods = []
+                for (const good of goods) {
+                    if(good.time != deleteItemId) newGoods.push(good)
+                }
+                cart.goods = newGoods
             }
-            cart.goods = newGoods
 
-            let rugs = JSON.parse(localStorage.getItem('cart')).rugs
-            let newRugs = []
-            console.log(deleteItemId)
-            for (const rug of rugs) {
-                if(rug.time != deleteItemId) newRugs.push(rug)
+            if(JSON.parse(localStorage.getItem('cart')).rugs) {
+                let rugs = JSON.parse(localStorage.getItem('cart')).rugs
+                let newRugs = []
+                for (const rug of rugs) {
+                    if(rug.time != deleteItemId) newRugs.push(rug)
+                }
+                cart.rugs = newRugs
             }
-            cart.rugs = newRugs
 
             localStorage.setItem('cart', JSON.stringify(cart))
             showCart()
