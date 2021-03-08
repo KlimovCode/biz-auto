@@ -13,6 +13,7 @@ $(document).ready(function() {
             }
         }
 
+
         let totalCountChairs = $(".chair__bigimg img").length
         const result = []
 
@@ -22,7 +23,7 @@ $(document).ready(function() {
         console.log(result)
         chairgallery = result
     }
-
+    getDataChairs()
     function chairgalleryRender(currentBigimg) {
         let smallimages = ''
 

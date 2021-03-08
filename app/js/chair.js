@@ -30,7 +30,7 @@ function renderChair(img = 1, fabric = 'alcantara') {
 function getData(img = 1, fabric = 'alcantara') {
     if(chairgallery.length != 0) fabric = chairgallery[currentBigimg-1].fabric
     if(currentBigimg) img = currentBigimg
-
+    console.log(chairgallery)
     let temp = {
         title : $(".main__title").text(),
         price : $(".chair__fabrics label[for="+fabric+"] .fabric__price").text(),
