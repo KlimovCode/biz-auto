@@ -1,8 +1,9 @@
 function renderCart() {
     if(localStorage.getItem('cart')) {
         cart = JSON.parse(localStorage.getItem('cart'))
-        let goodsLength = cart.goods.length
-        $(".cart__count").text(goodsLength)
+        let goodsLength = cart.goods ? cart.goods.length : 0
+        let rugsLength = cart.rugs ? cart.rugs.length : 0
+        $(".cart__count").text(goodsLength + rugsLength)
     } else {
         $(".cart__count").text(0)
     }
@@ -30,14 +31,12 @@ function getData(img = 1, fabric = 'alcantara') {
     if(chairgallery.length != 0) fabric = chairgallery[currentBigimg-1].fabric
     if(currentBigimg) img = currentBigimg
 
-    console.log('get data of chair', currentBigimg)
     let temp = {
         title : $(".main__title").text(),
         price : $(".chair__fabrics label[for="+fabric+"] .fabric__price").text(),
         fabricRus : $(".chair__fabrics label[for="+fabric+"] .fabric__name").text(),
         fabricColor : $(".chair__bigimg--"+img+" span").text()
     }
-    console.log(temp)
     return temp
 }
 
@@ -80,10 +79,12 @@ function chairHandlers(img = 1, fabric = 'alcantara') {
         if(localStorage.getItem('cart')) {
             cart = JSON.parse(localStorage.getItem('cart'))
             let time = Date.now()
+            if(!cart.goods) cart.goods = []
             cart.goods.push({time, ...data})
             localStorage.setItem('cart', JSON.stringify(cart))
         } else {
             let time = Date.now()
+            if(!cart.goods) cart.goods = []
             cart = {goods: [{time, ...data}]}
             localStorage.setItem('cart', JSON.stringify(cart))
         }

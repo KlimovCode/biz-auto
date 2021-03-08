@@ -38,6 +38,7 @@ function handlerBuyClick() {
             cart = {rugs: [{time, title, price, color}]}
             localStorage.setItem('cart', JSON.stringify(cart))
         }
+        renderCart()
     })
 }
 
