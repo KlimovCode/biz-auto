@@ -9,7 +9,7 @@
                     ?>
                 </div>
                 <div class="chair__btn">
-                    <button class="chair__btn__buy">
+                    <button class="rug__btn__buy">
                         Добавить в корзину
                     </button>
                 </div>
