@@ -8,8 +8,8 @@
                         require_once "./app/db/getimgsrugs.php";
                     ?>
                 </div>
-                <div class="chair__btn">
-                    <button class="chair__btn__buy">
+                <div class="rug__btn">
+                    <button class="rug__btn__buy">
                         Добавить в корзину
                     </button>
                 </div>

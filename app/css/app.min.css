@@ -1352,3 +1352,25 @@ h1, h2, h3, h4, h5, h6 {
 .rug__price {
   margin-left: 3rem;
   font-size: 2em; }
+
+.rug__btn {
+  width: 100%;
+  text-align: center; }
+
+.rug__btn__buy {
+  margin-top: 1em;
+  text-decoration: none;
+  background: #5d321d;
+  color: #fff;
+  border-radius: 20px;
+  height: 40px;
+  line-height: 40px;
+  vertical-align: center;
+  padding: 0 75px;
+  -webkit-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  transition: all 200ms linear; }
+
+.rug__btn__buy:hover {
+  text-shadow: #fff 0 0 20px;
+  cursor: pointer; }
