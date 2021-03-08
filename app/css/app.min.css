@@ -239,9 +239,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .menu__chehli__links {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;

@@ -42,9 +42,14 @@
                     </a>
                     <div class="menu__dropdown">
                         <div class="menu__chehli__wrap">
-                            <a href="/app/auto" class="menu__chehli menu__dropdown--active">Авточехлы</a>
-                            <div class="menu__chehli__links">
+<!--                             menu__dropdown--active-->
+                            <a href="/app/auto" class="menu__chehli" data-menu="submenu">Авточехлы</a>
+                            <a href="/app/auto/rugs" class="menu__chehli" data-menu="submenurug">Коврики</a>
+                            <div class="menu__chehli__links menu__chehli__links--submenu">
                                 <?php include "./app/db/getmenu.php"; ?>
+                            </div>
+                            <div class="menu__chehli__links menu__chehli__links--submenurug">
+                                <?php include "./app/db/getmenurug.php"; ?>
                             </div>
                         </div>
 <!--                        <a href="#">Коврики</a>-->
