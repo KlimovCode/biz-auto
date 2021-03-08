@@ -28,7 +28,10 @@ if($result) {
     }
     echo '<div class="rugs__wrap">';
     echo $bigimg . '</div>';
-    echo $smallimg . '</div>';
+    echo '<div class="rug__smallimgprice">';
+            echo $smallimg . '</div>';
+        include 'getrugprice.php';
+    echo '</div>';
     echo '</div>';
 
     // очищаем результат

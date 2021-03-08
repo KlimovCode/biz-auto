@@ -1315,6 +1315,17 @@ h1, h2, h3, h4, h5, h6 {
 .rug__bigimg img {
   max-width: 300px; }
 
+.rug__smallimgprice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
 .rug__smallimg__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1326,15 +1337,20 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 300px;
   height: auto;
   margin-left: 2em;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .rug__small {
   cursor: pointer;
-  background: #9a9a9a; }
+  background: #9a9a9a;
+  margin-top: 1em;
+  margin-left: 1em; }
+
+.rug__price {
+  margin-left: 3rem;
+  font-size: 2em; }
