@@ -3,7 +3,7 @@
         <h2 class="main__title">Виды накидок</h2>
         <div class="main__inner">
             <div class="cards__wrap">
-<!--                --><?php //require_once "./app/db/getbrendsrugs.php"; ?>
+                <?php require_once "./app/db/getbrendscapes.php"; ?>
             </div>
         </div>
     </div>
