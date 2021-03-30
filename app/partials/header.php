@@ -45,6 +45,7 @@
 <!--                             menu__dropdown--active-->
                             <a href="/app/auto" class="menu__chehli" data-menu="submenu">Авточехлы</a>
                             <a href="/app/auto/rugs" class="menu__chehli" data-menu="submenurug">Коврики</a>
+                            <a href="/app/auto/capes" class="menu__chehli" data-menu="submenucape">Накидки</a>
                             <div class="menu__chehli__links menu__chehli__links--submenu">
                                 <?php include "./app/db/getmenu.php"; ?>
                             </div>
