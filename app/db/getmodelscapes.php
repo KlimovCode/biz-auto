@@ -6,8 +6,7 @@ $link = mysqli_connect($host, $username, $password, $dbname)
 or die("Ошибка " . mysqli_error($link));
 $link->set_charset("utf8");
 // get id of brend
-$brend = explode('/', $_GET['route']);
-preg_match('/(\d)$/', $brend[2], $brend_id);
+preg_match('/(\d+)$/', $_GET['route'], $brend_id);
 $brend_id = $brend_id[0];
 
 $query ="SELECT * FROM capemodels WHERE cape_id='$brend_id'";
