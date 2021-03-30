@@ -31,7 +31,7 @@ if($result) {
     echo $bigimg . '</div>';
     echo '<div class="rug__smallimgprice">';
     echo $smallimg . '</div>';
-//    include 'getrugprice.php';
+    include 'getcapeprice.php';
     echo '</div>';
     echo '</div>';
 
