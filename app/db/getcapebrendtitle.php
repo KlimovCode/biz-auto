@@ -7,9 +7,8 @@ or die("Ошибка " . mysqli_error($link));
 $link->set_charset("utf8");
 
 // get id of brend
-$brend = explode('/', $_GET['route']);
-preg_match('/(\d)$/', $brend[2], $brend_id);
-$brend_id = $brend_id[0];
+preg_match('/(\d+)$/', $_GET['route'], $brend_id);
+$brend_id = $brend_id[1];
 
 $query ="SELECT title FROM capes WHERE id='$brend_id'";
 $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link));
