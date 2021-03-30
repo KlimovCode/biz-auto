@@ -7,9 +7,8 @@ or die("Ошибка " . mysqli_error($link));
 $link->set_charset("utf8");
 
 // get id of model
-$model = explode('/', $_GET['route']);
-preg_match('/(\d)$/', $model[3], $model_id);
-$model_id = $model_id[0];
+preg_match('/m(\d+)$/', $_GET['route'], $model_id);
+$model_id = $model_id[1];
 
 $query = "SELECT * FROM capeitem WHERE capemodel_id='$model_id'";
 
