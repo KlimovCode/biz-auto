@@ -5,7 +5,7 @@
             <div class="chair__wrap">
                 <div class="chair__inner">
                     <?php
-                    // require_once "./app/db/getimgsrugs.php";
+                     require_once "./app/db/getcapeitem.php";
                     ?>
                 </div>
                 <div class="rug__btn">
