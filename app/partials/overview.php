@@ -27,7 +27,7 @@
                     <span class="overview__btn--link">В каталог</span>
                 </div>
             </div></a>
-            <a href="/app/auto" class="overview__card__link"><div class="overview__card overview__card--third">
+            <a href="/app/auto/capes" class="overview__card__link"><div class="overview__card overview__card--third">
                 <div class="overview__title">
                     Накидки
                     <div class="overview__subtitle">Для сидений</div>
