@@ -36,8 +36,8 @@
                 <div class="footer__list__title">КАТЕГОРИИ ТОВАРОВ:</div>
                 <ul class="footer__list">
                     <li class="footer__list__item"><a href="/app/auto">Автоковрики</a></li>
-                    <li class="footer__list__item"><a href="/app/auto">Авточехлы</a></li>
-                    <li class="footer__list__item"><a href="/app/auto">Накидки</a></li>
+                    <li class="footer__list__item"><a href="/app/auto/rugs">Авточехлы</a></li>
+                    <li class="footer__list__item"><a href="/app/auto/capes">Накидки</a></li>
                 </ul>
             </div>
 <!--            <div class="footer__col">-->
